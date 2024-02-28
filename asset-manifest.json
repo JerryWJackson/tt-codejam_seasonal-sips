@@ -1,20 +1,20 @@
 {
   "files": {
-    "main.css": "/static/css/main.fbc7d7ee.css",
-    "main.js": "/static/js/main.4d43effe.js",
-    "static/media/drinksGallery.png": "/static/media/drinksGallery.04a7344515ab6917e815.png",
-    "static/media/Inter-Medium.woff": "/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
-    "static/media/Inter-Black.woff": "/static/media/Inter-Black.c6938660eec019fefd68.woff",
-    "static/media/Inter-Regular.woff": "/static/media/Inter-Regular.8c206db99195777c6769.woff",
-    "static/media/Inter-Medium.woff2": "/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
-    "static/media/Inter-Black.woff2": "/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
-    "static/media/Inter-Regular.woff2": "/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
-    "index.html": "/index.html",
-    "main.fbc7d7ee.css.map": "/static/css/main.fbc7d7ee.css.map",
-    "main.4d43effe.js.map": "/static/js/main.4d43effe.js.map"
+    "main.css": "/tt-codejam_seasonal-sips/static/css/main.183890b4.css",
+    "main.js": "/tt-codejam_seasonal-sips/static/js/main.a6df7305.js",
+    "static/media/drinksGallery.png": "/tt-codejam_seasonal-sips/static/media/drinksGallery.04a7344515ab6917e815.png",
+    "static/media/Inter-Medium.woff": "/tt-codejam_seasonal-sips/static/media/Inter-Medium.9053572c46aeb4b16caa.woff",
+    "static/media/Inter-Black.woff": "/tt-codejam_seasonal-sips/static/media/Inter-Black.c6938660eec019fefd68.woff",
+    "static/media/Inter-Regular.woff": "/tt-codejam_seasonal-sips/static/media/Inter-Regular.8c206db99195777c6769.woff",
+    "static/media/Inter-Medium.woff2": "/tt-codejam_seasonal-sips/static/media/Inter-Medium.293fd13dbca5a3e450ef.woff2",
+    "static/media/Inter-Black.woff2": "/tt-codejam_seasonal-sips/static/media/Inter-Black.15ca31c0a2a68f76d2d1.woff2",
+    "static/media/Inter-Regular.woff2": "/tt-codejam_seasonal-sips/static/media/Inter-Regular.c8ba52b05a9ef10f4758.woff2",
+    "index.html": "/tt-codejam_seasonal-sips/index.html",
+    "main.183890b4.css.map": "/tt-codejam_seasonal-sips/static/css/main.183890b4.css.map",
+    "main.a6df7305.js.map": "/tt-codejam_seasonal-sips/static/js/main.a6df7305.js.map"
   },
   "entrypoints": [
-    "static/css/main.fbc7d7ee.css",
-    "static/js/main.4d43effe.js"
+    "static/css/main.183890b4.css",
+    "static/js/main.a6df7305.js"
   ]
 }
