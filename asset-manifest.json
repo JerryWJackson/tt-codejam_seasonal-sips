@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/tt-codejam_seasonal-sips/static/css/main.737905d5.css",
+    "main.css": "/tt-codejam_seasonal-sips/static/css/main.8e40833f.css",
     "main.js": "/tt-codejam_seasonal-sips/static/js/main.986c4859.js",
     "static/media/bannerWinter.png": "/tt-codejam_seasonal-sips/static/media/bannerWinter.ebbe2afc948e43d9a17b.png",
     "static/media/bannerSummer.png": "/tt-codejam_seasonal-sips/static/media/bannerSummer.9edb84108f42c38bd0e7.png",
@@ -11,11 +11,11 @@
     "static/media/PlayfairDisplaySC-Italic.ttf": "/tt-codejam_seasonal-sips/static/media/PlayfairDisplaySC-Italic.bef6e39aec9ea03f95c8.ttf",
     "static/media/CinzelDecorative-Regular.ttf": "/tt-codejam_seasonal-sips/static/media/CinzelDecorative-Regular.c243877d82654b511c69.ttf",
     "index.html": "/tt-codejam_seasonal-sips/index.html",
-    "main.737905d5.css.map": "/tt-codejam_seasonal-sips/static/css/main.737905d5.css.map",
+    "main.8e40833f.css.map": "/tt-codejam_seasonal-sips/static/css/main.8e40833f.css.map",
     "main.986c4859.js.map": "/tt-codejam_seasonal-sips/static/js/main.986c4859.js.map"
   },
   "entrypoints": [
-    "static/css/main.737905d5.css",
+    "static/css/main.8e40833f.css",
     "static/js/main.986c4859.js"
   ]
 }
