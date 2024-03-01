@@ -47,13 +47,6 @@
   color: rgb(114, 134, 151);
 }
 
-.header__container-description {
-  margin: 5px 0 10px 0;
-  font-size: 45px;
-  color: rgba(184, 123, 49, 0.808);
-  font-family: "Gardena Holmes Script DEMO", sans-serif;
-}
-
 @media screen and (max-width: 800px) {
   .header__logo {
     width: 100px;

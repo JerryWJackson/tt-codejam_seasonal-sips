@@ -125,8 +125,36 @@
   border-color: rgb(92, 122, 106);
 }
 
-.home__search::placeholder {
+.home__search.spring {
+  border-color: rgb(92, 122, 106);
+}
+
+.home__search.spring::placeholder {
   color: rgba(92, 122, 106, 0.75);
+}
+
+.home__search.summer {
+  border-color: rgb(194, 56, 4);
+}
+
+.home__search.summer::placeholder {
+  color: rgba(194, 56, 4, 0.75);
+}
+
+.home__search.fall {
+  border-color: rgb(223, 156, 77);
+}
+
+.home__search.fall::placeholder {
+  color: rgba(223, 156, 77, 0.75);
+}
+
+.home__search.winter {
+  border-color: rgb(114, 134, 151);
+}
+
+.home__search.winter::placeholder {
+  color: rgba(114, 134, 151, 0.75);
 }
 
 .home__zipcode-and-button {
