@@ -194,6 +194,18 @@
   .home__description {
     font-size: 1rem;
   }
+  .home__circle {
+    width: 354px;
+    height: 173px;
+  }
+  .home__submit {
+    width: 20rem;
+    height: 5rem;
+  }
+  .home__search {
+    max-width: 125px;
+    height: 40px;
+  }
 }
 
 @media screen and (max-width: 480px) {
