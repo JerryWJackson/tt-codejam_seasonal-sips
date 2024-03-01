@@ -149,24 +149,32 @@
   background-color: rgb(92, 122, 106);
   color: rgb(255, 255, 255);
 }
+.home__submit.spring:hover {
+  background-color: rgba(131, 185, 156, 1);
+}
 
 .home__submit.summer {
   background-color: rgb(194, 56, 4);
   color: rgb(255, 255, 255);
+}
+.home__submit.summer:hover {
+  background-color: rgba(248, 113, 62, 1);
 }
 
 .home__submit.fall {
   background-color: rgb(223, 156, 77);
   color: rgb(255, 255, 255);
 }
+.home__submit.fall:hover {
+  background-color: rgba(202, 125, 35, 1);
+}
 
 .home__submit.winter {
   background-color: rgb(114, 134, 151);
   color: rgb(255, 255, 255);
 }
-
-.home__submit:hover {
-  color: rgba(255, 200, 0, 0.857);
+.home__submit.winter:hover {
+  background-color: rgba(97, 123, 146, 1);
 }
 
 @media screen and (max-width: 820px) {
