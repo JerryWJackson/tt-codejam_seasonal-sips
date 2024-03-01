@@ -9,7 +9,8 @@ export default function Card(props) {
   const drink5 = drinksList[4];
 
   let fiveDrinks = [];
-  drinksList.forEach((drink, index) => {
+  let thisDrinksList = drinksList.slice(0, 5);
+  thisDrinksList.forEach((drink, index) => {
     fiveDrinks.push(
       <li key={index}>
         <input type="radio" name="slide" id={`c${index}`} checked />

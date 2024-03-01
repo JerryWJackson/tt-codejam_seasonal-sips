@@ -15,6 +15,7 @@ const Main = (props) => {
       <section id="main" className="main">
         <Header address={props.address} />
         <div className="main__tag-selector">
+          Pick your poison...
           <div className="tag_container">
             <Tags />
           </div>
