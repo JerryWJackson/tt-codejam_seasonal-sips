@@ -1,18 +1,21 @@
 {
   "files": {
-    "main.css": "/tt-codejam_seasonal-sips/static/css/main.9cf12c78.css",
-    "main.js": "/tt-codejam_seasonal-sips/static/js/main.3154ba17.js",
+    "main.css": "/tt-codejam_seasonal-sips/static/css/main.72bfefe0.css",
+    "main.js": "/tt-codejam_seasonal-sips/static/js/main.b9a597d6.js",
+    "static/media/bannerWinter.png": "/tt-codejam_seasonal-sips/static/media/bannerWinter.ebbe2afc948e43d9a17b.png",
+    "static/media/bannerSummer.png": "/tt-codejam_seasonal-sips/static/media/bannerSummer.9edb84108f42c38bd0e7.png",
     "static/media/bannerSpring.png": "/tt-codejam_seasonal-sips/static/media/bannerSpring.69081a30810523af73e1.png",
+    "static/media/bannerFall.png": "/tt-codejam_seasonal-sips/static/media/bannerFall.c8fd702066b12cc7dab0.png",
     "static/media/drinksGallery.png": "/tt-codejam_seasonal-sips/static/media/drinksGallery.04a7344515ab6917e815.png",
     "static/media/Raleway-VariableFont_wght.ttf": "/tt-codejam_seasonal-sips/static/media/Raleway-VariableFont_wght.e14d84ccec6be3ff19e3.ttf",
     "static/media/PlayfairDisplaySC-Italic.ttf": "/tt-codejam_seasonal-sips/static/media/PlayfairDisplaySC-Italic.bef6e39aec9ea03f95c8.ttf",
     "static/media/CinzelDecorative-Regular.ttf": "/tt-codejam_seasonal-sips/static/media/CinzelDecorative-Regular.c243877d82654b511c69.ttf",
     "index.html": "/tt-codejam_seasonal-sips/index.html",
-    "main.9cf12c78.css.map": "/tt-codejam_seasonal-sips/static/css/main.9cf12c78.css.map",
-    "main.3154ba17.js.map": "/tt-codejam_seasonal-sips/static/js/main.3154ba17.js.map"
+    "main.72bfefe0.css.map": "/tt-codejam_seasonal-sips/static/css/main.72bfefe0.css.map",
+    "main.b9a597d6.js.map": "/tt-codejam_seasonal-sips/static/js/main.b9a597d6.js.map"
   },
   "entrypoints": [
-    "static/css/main.9cf12c78.css",
-    "static/js/main.3154ba17.js"
+    "static/css/main.72bfefe0.css",
+    "static/js/main.b9a597d6.js"
   ]
 }
