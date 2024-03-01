@@ -5,7 +5,8 @@ import React from "react";
 import Map from "../Map/Map";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-// import Tags from "../Tags/tags";
+import Tags from "../Tags/tags";
+import CardList from "../CardList/CardList";
 // import ResourceCenter from "../ResourceCenter/ResourceCenter";
 
 const Main = (props) => {
@@ -17,9 +18,12 @@ const Main = (props) => {
           This is where you will select tags for drink choices.
 
           <div className="tag_container">
-          {/* <Tags /> */}
+          <Tags />
           </div>
         </div>
+      </section>
+      <section id="cardlist" className="cardlist">
+        <CardList />
       </section>
       <section id="map" className="main__map">
         <div className="main__map">
@@ -30,6 +34,9 @@ const Main = (props) => {
             setNotFound={props.setNotFound}
           />
         </div>
+      </section>
+      <section id="footer" className="footer">
+        <Footer />
       </section>
     </>
   );

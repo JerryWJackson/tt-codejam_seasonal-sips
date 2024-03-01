@@ -14,6 +14,7 @@ const Map = ({ address, setPin, notFound, setNotFound }) => {
       .then((res) => res.json())
       .then((data) => {
         if (data.results && data.results.length > 0) {
+          console.log(data);
           const embedUrl = `https://www.google.com/maps/embed/v1/search?q=+recycling+centers+${encodeURIComponent(
             address
           )}&key=${constants.apiKey}`;

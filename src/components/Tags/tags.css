@@ -1,0 +1,16 @@
+.tag__container {
+  gap: 0.5rem;
+  text-align: left;
+  margin: 1rem;
+}
+
+ul {
+  list-style: none;
+  columns: 4;
+  -webkit-columns: 4;
+  -moz-columns: 4;
+}
+
+.tag__checkbox_label {
+  padding-left: .8rem;
+}

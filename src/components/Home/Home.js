@@ -21,24 +21,25 @@ const Home = (props) => {
   return (
     <div className="home">
       <div className="home__header">
-        <p className="home__caption spring">Seasonal Sips</p>
-        <p className="home__caption-byline spring">
-          Curating Seasonal Libations
-        </p>
+        <p className="home__caption winter">Seasonal Sips</p>
+        <p className="home__caption-byline winter">Curating Seasonal Libations</p>
         <div className="home__container">
-          <p className="home__description spring">
+          <p className="home__description winter">
             Have you and your friends gotten tired of going to the same old
             places and drinking the same old things? Use Seasonal Sips to go on
             an adventure in your town tonight!
           </p>
-          <p className="home__description spring">
+          <p className="home__description winter">
             Seasonal Sips offers a curated list of locally popular libations and
             the places to find their ingredients or the places that serve them
             for making your next night in or out with your friends into a new
-            and exciting adventure - All while supporting local businesses you
-            might never have thought to visit before.
+            and exciting adventure.
           </p>
-          <div className="home__circle"></div>
+          <p className="home__description winter">
+            All while supporting local businesses you might never have thought
+            to visit before.
+          </p>
+          <div className="home__circle winter"></div>
         </div>
         <div className="home__zipcode-and-button">
           <input
@@ -53,7 +54,7 @@ const Home = (props) => {
             type="button"
             id="start-button"
             onClick={setLocation}
-            className="home__submit spring"
+            className="home__submit winter"
           >
             FIND LIBATIONS
           </button>

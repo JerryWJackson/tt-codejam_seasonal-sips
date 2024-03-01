@@ -7,8 +7,8 @@
   justify-content: center;
 }
 
-.container {
-  height: 400px;
+.container__cards {
+  width: 500px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
@@ -80,7 +80,7 @@ input:checked + label .description {
   transform: translateY(0) !important;
 }
 
-.card[for="c1"] {
+/* .card[for="c1"] {
   background-image: url({drink1.url[0]});
 }
 .card[for="c2"] {
@@ -94,4 +94,4 @@ input:checked + label .description {
 }
 .card[for="c5"] {
   background-image: url({drink5.url[0]});
-}
+} */

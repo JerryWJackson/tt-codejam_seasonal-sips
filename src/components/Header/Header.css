@@ -1,3 +1,7 @@
+/* this file needs a background color and some sizing.
+   it also needs seasonal css for changing the background color.
+*/
+
 .header {
   display: flex;
   flex-direction: column;
@@ -45,6 +49,16 @@
 
 .header__container-title.winter {
   color: rgb(114, 134, 151);
+}
+
+.header__container-description {
+  margin: 5px 0 10px 0;
+  color: rgba(184, 123, 49, 0.808);
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  padding-bottom: 1.25rem;
 }
 
 @media screen and (max-width: 800px) {

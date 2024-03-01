@@ -1,23 +1,37 @@
 .footer {
   font-size: 16px;
-  border-radius: 20px;
-  margin-bottom: 10px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   width: 100%;
-  padding: 0 25px 0 30px;
+}
+
+.footer.spring {
+  background-color: rgb(92, 122, 106);
+  color: rgb(244, 235, 236);
+}
+
+.footer.summer {
+  background-color: rgb(194, 56, 4);
+  color: rgb(244, 235, 236);
+}
+
+.footer.fall {
+  background-color: rgb(223, 156, 77);
+  color: rgb(244, 235, 236);
+}
+
+.footer.winter {
+  background-color: rgb(114, 134, 151);
+  color: rgb(244, 235, 236);
 }
 
 .footer__title {
-  font-family: "Playfair Display SC", serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 400;
-  padding-bottom: 1.25rem;
-  color: rgb(92, 122, 106);
-  letter-spacing: 2.5px;
-  margin-top: 25px;
+  font-family: "Raleway", serif;
+  gap: 3px;
+  font-style:  italic;
+  font-weight: 600;
+  padding: 1.2rem 0;
 }
 
 .footer__names {
@@ -25,17 +39,30 @@
   flex-direction: row;
   align-items: center;
   padding-top: 5px;
-  gap: 20px;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
+  padding-bottom: 10px;
+  gap: 3px;
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 600;
+}
+
+/* .footer__names.spring {
   color: rgb(92, 122, 106);
 }
 
-.footer__copyright {
-  display: flex;
-  flex-direction: column;
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  color: rgb(92, 122, 106);
-  align-self: flex-end;
+.footer__names.summer {
+  color: rgb(194, 56, 4);
+}
+
+.footer__names.fall {
+  color: rgb(223, 156, 77);
+}
+
+.footer__names.winter {
+  color: rgb(114, 134, 151);
+} */
+
+.footer__year {
+  font-family: "Raleway", serif;
+  color: rgb(244, 235, 236);
+  padding: 0 0 1.2rem 0;
 }

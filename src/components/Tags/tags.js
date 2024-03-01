@@ -1,4 +1,5 @@
 import { drinksList } from "../../utils/drinksList";
+import "./tags.css";
 
 const tags = [];
 const buildTagCloud = () => {
@@ -6,27 +7,37 @@ const buildTagCloud = () => {
     drink.tags.forEach((tag) => {
       if (!tags.includes(tag)) {
         tags.push(tag);
+        console.log(tag);
       }
     });
   });
+  console.log(tags);
 };
 buildTagCloud();
-
-const Tags = (props) => {
-  return this.props.tags.map((tag, index) => {
-    return (
-      <div key={index} className="tag">
+const Tags = () => {
+  let tagsList = [];
+  tags.forEach((tag, index) => {
+    tagsList.push(
+      <li key={index}>
         <input
-          className="tag"
+          className="tag__checkbox"
           type="checkbox"
-          id={index}
-          name={tag[index].value}
-          value={tag[index].value}
+          id=""
+          name={tag}
           value={tag}
         />
-      </div>
+        <span className="span-for-tag">
+          <label for="tag__checkbox" className="tag__checkbox_label">{tag}</label>
+        </span>
+      </li>
     );
   });
+
+  return (
+    <div className="tag__container">
+      <ul>{tagsList}</ul>
+    </div>
+  );
 };
 
 export default Tags;
