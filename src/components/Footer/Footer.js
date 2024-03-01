@@ -11,7 +11,7 @@ const Footer = () => {
         <span>Jenny Sukut </span>
         <span>Jerry Jackson</span>
         <span>Anna Vasileva</span>
-        <span>May </span>
+        <span>Lalla blue</span>
       </div>
       <div className="footer__year spring"> &#x24B8; 2024</div>
     </footer>
