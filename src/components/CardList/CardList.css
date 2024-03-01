@@ -7,14 +7,14 @@
 }
 
 .container__cards {
-  width: 500px;
   display: flex;
   flex-wrap: nowrap;
   justify-content: flex-start;
 }
 
 .card {
-  width: 80px;
+  width: 100%;
+  height: 100%;
   border-radius: 0.75rem;
   background-size: cover;
   cursor: pointer;
