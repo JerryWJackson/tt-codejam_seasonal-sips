@@ -13,7 +13,7 @@ const Footer = () => {
         <span>Anna Vasileva</span>
         <span>May </span>
       </div>
-      <div className="footer__names"> &#x24B8; 2024</div>
+      <div className="footer__copyright"> &#x24B8; 2024</div>
     </footer>
   );
 };
