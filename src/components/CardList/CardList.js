@@ -1,4 +1,4 @@
-import { React, useState } from "React";
+import { React } from "react";
 import "./CardList.css";
 import Card from "../Card/Card.js";
 import drinksList from "../../utils/drinksList";
@@ -13,7 +13,4 @@ export default function CardList(props) {
       </div>
     </div>
   );
-}
-
-
-export default
+};

@@ -1,3 +1,4 @@
+import { React } from "react";
 import { drinksList } from "../../utils/drinksList";
 import "./tags.css";
 
