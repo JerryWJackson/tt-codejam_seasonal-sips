@@ -14,8 +14,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  padding-left: 50px;
-  padding-right: 50px;
 }
 
 .home__caption {
@@ -75,6 +73,8 @@
   gap: 3rem;
   margin-top: 45px;
   max-width: 900px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .home__circle {
@@ -131,6 +131,8 @@
 
 .home__zipcode-and-button {
   margin-top: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .home__submit {
@@ -193,7 +195,7 @@
 @media screen and (max-width: 700px) {
   .home__caption {
     font-size: 3.7rem;
-    margin-top: 0px;
+    margin-top: 50px;
   }
   .home__caption-byline {
     font-size: 1rem;
@@ -232,8 +234,8 @@
     height: 162px;
   }
   .home__submit {
-    width: 20rem;
-    height: 4.75rem;
+    width: 18rem;
+    height: 4.65rem;
   }
   .home__search {
     max-width: 120px;

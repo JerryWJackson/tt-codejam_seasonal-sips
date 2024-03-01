@@ -31,6 +31,22 @@
   margin-bottom: 50px;
 }
 
+.header__container-title.spring {
+  color: rgb(92, 122, 106);
+}
+
+.header__container-title.summer {
+  color: rgb(194, 56, 4);
+}
+
+.header__container-title.fall {
+  color: rgb(223, 156, 77);
+}
+
+.header__container-title.winter {
+  color: rgb(114, 134, 151);
+}
+
 .header__container-description {
   margin: 5px 0 10px 0;
   font-size: 45px;
