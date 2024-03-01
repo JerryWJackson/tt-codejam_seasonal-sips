@@ -1,5 +1,6 @@
 import "./App.css";
-import { React, useState } from "react";
+import { React } from "react";
+import { useState } from "react";
 import "../../vendor/fonts.css";
 // eslint-disable-next-line
 import Home from "../Home/Home";
