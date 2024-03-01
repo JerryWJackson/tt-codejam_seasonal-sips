@@ -13,12 +13,12 @@ if (curmonth == 12 || curmonth == 1 || curmonth == 2) {
     if (element.classList.contains("fall")) {
       element.classList.remove("fall");
     }
-    element.classList.add("winter");
+    element.classList.add("spring");
   });
 } else if (curmonth == 3 || curmonth == 4 || curmonth == 5) {
   seasonalElements.forEach((element) => {
-    if (element.classList.contains("winter")) {
-      element.classList.remove("winter");
+    if (element.classList.contains("spring")) {
+      element.classList.remove("spring");
     }
     element.classList.add("spring");
   });
