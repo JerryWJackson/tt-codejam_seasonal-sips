@@ -16,19 +16,50 @@
 }
 
 .home__caption {
-  color: rgb(92, 122, 106);
   font-family: "Cinzel Decorative", serif;
   font-size: 6rem;
   font-weight: 400;
+  color: rgb(92, 122, 106);
+}
+
+.home__caption.spring {
+  color: rgb(92, 122, 106);
+}
+
+.home__caption.summer {
+  color: rgb(194, 56, 4);
+}
+
+.home__caption.fall {
+  color: rgb(223, 156, 77);
+}
+
+.home__caption.winter {
+  color: rgb(114, 134, 151);
 }
 
 .home__caption-byline {
-  color: rgb(92, 122, 106);
   font-family: "Playfair Display SC", serif;
   font-size: 1.5rem;
   font-style: italic;
   font-weight: 400;
   padding-bottom: 1.25rem;
+}
+
+.home__caption-byline.spring {
+  color: rgb(92, 122, 106);
+}
+
+.home__caption-byline.summer {
+  color: rgb(194, 56, 4);
+}
+
+.home__caption-byline.fall {
+  color: rgb(223, 156, 77);
+}
+
+.home__caption-byline.winter {
+  color: rgb(114, 134, 151);
 }
 
 .home__container {
@@ -43,11 +74,27 @@
 .home__circle {
   margin: 0;
   width: 443px;
-  height:217px;
+  height: 217px;
   border: none;
   border-radius: 50%;
   background-image: url("../../images/bannerSpring.png");
   background-size: cover;
+}
+
+.home__circle.spring {
+  background-image: url("../../images/bannerSpring.png");
+}
+
+.home__circle.summer {
+  background-image: url("../../images/bannerSummer.png");
+}
+
+.home__circle.fall {
+  background-image: url("../../images/bannerFall.png");
+}
+
+.home__circle.winter {
+  background-image: url("../../images/bannerWinter.png");
 }
 
 .home__description {
@@ -57,6 +104,7 @@
   text-align: center;
   align-self: center;
   font-size: 1.125rem;
+  color: rgb(0, 0, 0);
 }
 
 .home__search {
@@ -70,18 +118,35 @@
   margin-bottom: 40px;
   width: 24.8rem;
   height: 6rem;
-  background-color: rgb(92, 122, 106);
-  color: rgb(255, 255, 255);
   border: none;
   border-radius: 3rem;
-  font-family: "Raleway" ;
+  font-family: "Raleway";
   font-weight: 400;
   font-size: 1.25rem;
 }
 
+.home__submit.spring {
+  background-color: rgb(92, 122, 106);
+  color: rgb(255, 255, 255);
+}
+
+.home__submit.summer {
+  background-color: rgb(194, 56, 4);
+  color: rgb(255, 255, 255);
+}
+
+.home__submit.fall {
+  background-color: rgb(223, 156, 77);
+  color: rgb(255, 255, 255);
+}
+
+.home__submit.winter {
+  background-color: rgb(114, 134, 151);
+  color: rgb(255, 255, 255);
+}
+
 .home__submit:hover {
-  background-color: rgba(170, 159, 61, 0.35);
-  color: rgb(255, 245, 229);
+  color: rgba(255, 200, 0, 0.857);
 }
 
 /* Pale Dogwood hex #F4CFC7 rgb 244,207,199 */
