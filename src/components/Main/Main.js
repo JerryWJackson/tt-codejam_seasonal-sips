@@ -15,10 +15,8 @@ const Main = (props) => {
       <section id="main" className="main">
         <Header address={props.address} />
         <div className="main__tag-selector">
-          This is where you will select tags for drink choices.
-
           <div className="tag_container">
-          <Tags />
+            <Tags />
           </div>
         </div>
       </section>

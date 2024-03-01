@@ -225,7 +225,7 @@ export const drinksList = [
       'url("https://plus.unsplash.com/premium_photo-1687871816021-38c6e4475845?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1708455398647-9f79425512fa?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Butterfly Pea Flower Tea", "Lemonade", "Ice", "Lemons"],
+    tags: ["Butterfly Pea Flower Tea", "Lemonade", "Lemons"],
     recipe:
       'url("https://www.ohhowcivilized.com/butterfly-pea-flower-lemonade/")',
     steps: {
