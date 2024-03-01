@@ -143,6 +143,7 @@
   font-family: "Raleway";
   font-weight: 400;
   font-size: 1.25rem;
+  letter-spacing: 2px;
 }
 
 .home__submit.spring {
@@ -183,6 +184,12 @@
   }
 }
 
+@media screen and (max-width: 900px) {
+  .home__caption {
+    font-size: 5.5rem;
+  }
+}
+
 @media screen and (max-width: 700px) {
   .home__caption {
     font-size: 3.7rem;
@@ -211,6 +218,8 @@
 @media screen and (max-width: 480px) {
   .home__caption {
     font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 15px;
   }
   .home__caption-byline {
     font-size: 0.75rem;
