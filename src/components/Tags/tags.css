@@ -17,6 +17,7 @@ ul {
   color: rgb(0, 0, 0);
   letter-spacing: 3px;
   font-family: "Raleway";
+  line-height: 2rem;
 }
 
 .tag__list-element {
