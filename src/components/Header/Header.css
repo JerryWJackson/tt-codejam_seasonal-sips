@@ -1,6 +1,6 @@
 .header {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -13,23 +13,38 @@
 }
 
 .header__container {
-  margin-right: 20px;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  margin-top: 75px;
 }
 
 .header__container-title {
-  font-size: 50px;
   margin: 0;
-  color: rgba(170, 159, 61, 0.75);
-  font-family: "Gardena Holmes serif", sans-serif;
+  font-family: "Cinzel Decorative", serif;
+  font-size: 5rem;
+  font-weight: 400;
+  color: rgb(92, 122, 106);
+  text-transform: lowercase;
+  max-width: 800px;
+  line-height: 4.5rem;
+  margin-bottom: 50px;
 }
 
-.header__container-description {
-  margin: 5px 0 10px 0;
-  font-size: 45px;
-  color: rgba(184, 123, 49, 0.808);
-  font-family: "Gardena Holmes Script DEMO", sans-serif;
+.header__container-title.spring {
+  color: rgb(92, 122, 106);
+}
+
+.header__container-title.summer {
+  color: rgb(194, 56, 4);
+}
+
+.header__container-title.fall {
+  color: rgb(223, 156, 77);
+}
+
+.header__container-title.winter {
+  color: rgb(114, 134, 151);
 }
 
 @media screen and (max-width: 800px) {
@@ -38,10 +53,34 @@
   }
 
   .header__container-title {
-    font-size: 24px;
+    font-size: 4rem;
+    max-width: 600px;
+    line-height: 3.5rem;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .header__container-description {
     font-size: 16px;
+  }
+}
+@media screen and (max-width: 700px) {
+  .header__container-title {
+    font-size: 3rem;
+    line-height: 2.5rem;
+  }
+}
+@media screen and (max-width: 480px) {
+  .header__container-title {
+    font-size: 2.5rem;
+    max-width: 400px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  header__container-title {
+    font-size: 2rem;
+    line-height: 2rem;
   }
 }

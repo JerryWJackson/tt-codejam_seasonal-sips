@@ -22,7 +22,7 @@ export default function App() {
     setTimeout(() => {
       const targetElement = document.getElementById(elementId);
       if (targetElement) {
-        console.log('targetElement');
+        console.log("targetElement");
         const { top } = targetElement.getBoundingClientRect();
         window.scrollTo({
           top: window.scrollY + top,
@@ -41,6 +41,7 @@ export default function App() {
         setPin={setPin}
       />
       <Main />
+      <Footer />
     </div>
   );
 }

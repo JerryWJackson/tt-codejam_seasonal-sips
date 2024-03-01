@@ -4,24 +4,38 @@
   margin-bottom: 10px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   width: 100%;
+  padding: 0 25px 0 30px;
 }
 
 .footer__title {
-  font-family: "Archivo Black", sans-serif;
-  gap: 3px;
-  font-style: bold;
-  font-weight: 600;
+  font-family: "Playfair Display SC", serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  font-weight: 400;
+  padding-bottom: 1.25rem;
+  color: rgb(92, 122, 106);
+  letter-spacing: 2.5px;
+  margin-top: 25px;
 }
 
 .footer__names {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   padding-top: 5px;
-  padding-bottom: 10px;
-  gap: 3px;
+  gap: 20px;
   font-family: "PT Sans", sans-serif;
-  font-weight: bold;
+  font-weight: 400;
+  color: rgb(92, 122, 106);
+}
+
+.footer__copyright {
+  display: flex;
+  flex-direction: column;
+  font-family: "PT Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(92, 122, 106);
+  align-self: flex-end;
 }

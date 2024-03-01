@@ -61,3 +61,5 @@ const drink5 = drinksList[4];
         </div>
         <div className="container__card_current-recipe"></div>
     </div>
+
+export default
