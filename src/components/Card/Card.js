@@ -10,8 +10,9 @@ export default function Card(props) {
 
   let fiveDrinks = [];
   drinksList.forEach((drink, index) => {
-    fiveDrinks.push(<li key={index}>
-      <input type="radio" name="slide" id={`c${index}`} checked />
+    fiveDrinks.push(
+      <li key={index}>
+        <input type="radio" name="slide" id={`c${index}`} checked />
         <label for={`c${index}`} className="card">
           <div className="row">
             <div className="icon">{drink.name}</div>
@@ -21,9 +22,9 @@ export default function Card(props) {
             </div>
           </div>
         </label>
-    </li>)
-  })
-
+      </li>
+    );
+  });
 
   return (
     <>
