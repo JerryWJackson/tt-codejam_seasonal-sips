@@ -5,7 +5,10 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1691568769494-bd35c1e48917?q=80&w=1908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1499638673689-79a0b5115d87?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Bourbon", "Peach", "Brown Sugar", "Ginger Beer", "Mint"],
+    alcohol:[
+      "Bourbon",
+    ],
+    ingredients: ["Peach", "Brown Sugar", "Ginger Beer", "Mint"],
     recipe: 'url("https://stripedspatula.com/bourbon-peach-smash/")',
     steps: {
       step1:
@@ -25,7 +28,13 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1644247988716-e5b98d435f22?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1644320579405-7a1f22e52a55?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Blood Orange", "Lime", "Champagne", "Tequila", "Cointreau"],
+    alcohol:[
+      "Champagne",
+      "Cointreau",
+      "St-Germain Elderflower Liqueur",
+      "Tequila"
+    ],
+    ingredients: ["Blood Orange", "Lime"],
     recipe: 'url("https://www.liquor.com/recipes/colletti-royale/")',
     steps: {
       step1:
@@ -41,7 +50,10 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1623593688280-a5aec8ac4ae7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Gin", "Lime", "Honey Simple Syrup"],
+    alcohol:[
+      "Gin",
+    ],
+    ingredients: ["Lime", "Honey Simple Syrup"],
     recipe: 'url("https://www.gimmesomeoven.com/gimlet-recipe/")',
     steps: {
       step1:
@@ -56,7 +68,11 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1639048759534-88ddc0824955?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Vodka", "Triple Sec", "Lemon Juice", "Simple Syrup"],
+    alcohol:[
+      "Vodka",
+      "Triple Sec",
+    ],
+    ingredients: ["Lemon Juice", "Simple Syrup"],
     recipe: 'url("https://www.liquor.com/recipes/lemon-drop/")',
     steps: {
       step1:
@@ -72,7 +88,10 @@ export const drinksList = [
       'url("https://plus.unsplash.com/premium_photo-1690056321886-e35b0f0268d5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1615887023544-3a566f29d822?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Bourbon", "Lemon Juice", "Orange Blossom", "Simple Syrup"],
+    alcohol:[
+      "Bourbon",
+    ],
+    ingredients: ["Lemon Juice", "Orange Blossom Simple Syrup"],
     recipe:
       'url("https://www.trueloveandcoffee.com/home/orange-blossom-whiskey-sour-the-perfect-spring-cocktail")',
     steps: {
@@ -89,7 +108,10 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1504310578167-435ac09e69f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1605248152567-5af30fbe14d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Lime Flavored Rum", "Blueberries", "Mint Leaves"],
+    alcohol:[
+      "Lime Flavored Rum",
+    ],
+    ingredients: ["Blueberries", "Mint Leaves"],
     recipe:
       'url("https://www.bacardi.com/us/en/rum-cocktails/blueberry-lime-mojito/")',
     steps: {
@@ -108,7 +130,10 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1595981266686-0cf387d0a608?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Raspberries", "Gin", "Simple Syrup", "Lime Juice", "Thyme"],
+    alcohol:[
+      "Gin",
+    ],
+    ingredients: ["Raspberries", "Simple Syrup", "Lime Juice", "Thyme"],
     recipe: 'url("https://www.bonappetit.com/recipe/raspberry-thyme-smash")',
     steps: {
       step1: "Remove leaves from 1 thyme sprig; place in cocktail shaker.",
@@ -127,7 +152,10 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1620360289473-bfafadc16c57?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1562447457-579fc34967fb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Raspberry Syrup", "White Chocolate Sauce", "Coffee"],
+    alcohol:[
+      "Non-alcoholic",
+    ],
+    ingredients: ["Raspberry Syrup", "White Chocolate Sauce", "Coffee"],
     recipe:
       'url("https://jenaroundtheworld.com/raspberry-and-white-chocolate-iced-latte/")',
     steps: {
@@ -144,7 +172,10 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1669144457196-7a0f484333f8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1513816861509-09733a9f9383?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Blackberries", "Lemon Juice", "Gin", "Blackberry Syrup"],
+    alcohol:[
+      "Gin",
+    ],
+    ingredients: ["Blackberries", "Lemon Juice", "Blackberry Syrup"],
     recipe: 'url("https://www.feastingathome.com/blackberry-bramble/")',
     steps: {
       step1: "Fill a glass with ice.",
@@ -162,7 +193,11 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["St-Germain Elderflower Liqueur", "Mint", "Prosecco", "Soda Water"],
+    alcohol:[
+      "St-Germain Elderflower Liqueur",
+      "Prosecco",
+    ],
+    ingredients: ["Mint", "Soda Water"],
     recipe: 'url("https://www.sipandfeast.com/hugo-spritz/")',
     steps: {
       step1: "Fill a wine glass with ice.",
@@ -179,7 +214,11 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1602298134483-f4f469306bf6?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1597075759290-5c29a23c8a16?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Gin", "Cucumber", "Lime", "Simple Syrup"],
+
+    alcohol:[
+      "Gin",
+    ],
+    ingredients: ["Cucumber", "Lime", "Simple Syrup"],
     recipe: 'url("https://www.thespruceeats.com/cucumber-collins-4778647")',
     steps: {
       step1:
@@ -195,7 +234,11 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1578467759626-f94129ea94a4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1588685344608-514d42e02603?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Aperol", "Prosecco", "Club Soda", "Orange"],
+    alcohol:[
+      "Aperol",
+      "Prosecco",
+    ],
+    ingredients: ["Club Soda", "Orange"],
     recipe: 'url("https://cookieandkate.com/classic-aperol-spritz-recipe/")',
     steps: {
       step1:
@@ -208,7 +251,11 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1602061257507-e0150debda3b?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1602835124432-0ca2d2e66183?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Apricot Brandy", "Sour Mix"],
+    alcohol:[
+      "Gin",
+      "Apricot Brandy",
+    ],
+    ingredients: ["Sour Mix"],
     recipe:
       'url("https://www.thespruceeats.com/apricot-sour-cocktail-recipe-759410")',
     steps: {
@@ -225,7 +272,10 @@ export const drinksList = [
       'url("https://plus.unsplash.com/premium_photo-1687871816021-38c6e4475845?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1708455398647-9f79425512fa?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Butterfly Pea Flower Tea", "Lemonade", "Lemons"],
+    alcohol:[
+      "Non-alcoholic",
+    ],
+    ingredients: ["Butterfly Pea Flower Tea", "Lemonade", "Lemons"],
     recipe:
       'url("https://www.ohhowcivilized.com/butterfly-pea-flower-lemonade/")',
     steps: {
@@ -242,7 +292,12 @@ export const drinksList = [
       'url("https://images.unsplash.com/photo-1582269438702-578efa319292?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1582269438732-fe4d1452df3c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
     ],
-    tags: ["Gin", "Vermouth", "Salers Aperitif", "Lavender Bitters"],
+    alcohol:[
+      "Gin",
+      "Vermouth",
+      "Salers Aperitif",
+    ],
+    ingredients: ["Lavender Bitters"],
     recipe:
       'url("https://vinepair.com/cocktail-recipe/the-indigo-thrill-recipe/")',
     steps: {

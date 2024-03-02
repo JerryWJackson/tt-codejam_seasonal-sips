@@ -2,12 +2,6 @@ import { React } from "react";
 import { drinksList } from "../../utils/drinksList";
 
 export default function Card(props) {
-  const drink1 = drinksList[0];
-  const drink2 = drinksList[1];
-  const drink3 = drinksList[2];
-  const drink4 = drinksList[3];
-  const drink5 = drinksList[4];
-
   let fiveDrinks = [];
   let thisDrinksList = drinksList.slice(0, 5);
   thisDrinksList.forEach((drink, index) => {
@@ -19,7 +13,7 @@ export default function Card(props) {
             <div className="icon">{drink.name}</div>
             <div className="description">
               <h4>{drink.name}</h4>
-              <p>{drink.tags}</p>
+              <p>{drink.ingredients}</p>
             </div>
           </div>
         </label>

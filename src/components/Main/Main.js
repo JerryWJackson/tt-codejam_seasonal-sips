@@ -1,11 +1,11 @@
 import "./Main.css";
-import { drinksList } from "../../utils/drinksList";
 // eslint-disable-next-line
 import React from "react";
 import Map from "../Map/Map";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
-import Tags from "../Tags/tags";
+import Alcohol from "../Alcohol/Alcohol";
+import Ingredients from "../Ingredients/Ingredients";
 import CardList from "../CardList/CardList";
 // import ResourceCenter from "../ResourceCenter/ResourceCenter";
 
@@ -15,9 +15,13 @@ const Main = (props) => {
       <section id="main" className="main">
         <Header address={props.address} />
         <div className="main__tag-selector">
-          Pick your poison...
+          <p className="main__list_title">Pick your poison...</p>
           <div className="tag_container">
-            <Tags />
+            <Alcohol />
+          </div>
+          <p className="main__list_title">Pick your mixers...</p>
+          <div className="tag_container">
+            <Ingredients />
           </div>
         </div>
       </section>
