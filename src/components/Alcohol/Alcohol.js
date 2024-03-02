@@ -16,6 +16,8 @@ const buildAlcoholCloud = () => {
 };
 buildAlcoholCloud();
 
+alcohols.sort();
+
 const Alcohols = () => {
   let alcoholsList = [];
   alcohols.forEach((alcohol, index) => {
@@ -36,7 +38,7 @@ const Alcohols = () => {
   });
 
   return (
-    <div className="alcohol__container">
+    <div className="alcohols__container">
       <ul>{alcoholsList}</ul>
     </div>
   );

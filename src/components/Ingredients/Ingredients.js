@@ -15,6 +15,9 @@ const buildingredientCloud = () => {
   console.log(ingredients);
 };
 buildingredientCloud();
+
+ingredients.sort();
+
 const Ingredients = () => {
   let ingredientsList = [];
   ingredients.forEach((ingredient, index) => {
@@ -34,8 +37,9 @@ const Ingredients = () => {
     );
   });
 
+
   return (
-    <div className="ingredient__container">
+    <div className="ingredients__container">
       <ul>{ingredientsList}</ul>
     </div>
   );

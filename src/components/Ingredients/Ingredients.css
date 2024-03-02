@@ -1,3 +1,8 @@
+.ingredients__container {
+  gap: 0.5rem;
+  text-align: left;
+  margin: 1rem;
+}
 ul {
   columns: 3;
   -webkit-columns: 3;

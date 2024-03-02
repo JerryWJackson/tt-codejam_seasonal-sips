@@ -6,19 +6,38 @@
 }
 
 .main__list_title {
-  padding: 3rem;
+  padding: 2.5rem;
+  font-size: 1.75rem;
+  color: #233;
+  letter-spacing: 3px;
+  font-family: "Raleway";
+  line-height: 2rem;
 }
 
-.tag_container {
+.alcohols_container {
   display: flex;
   justify-content: space-around;
   gap: 2.5rem;
-  text-align: left;
   margin: 2rem 0;
 }
 
+.ingredients_container {
+  display: flex;
+  justify-content: space-around;
+  gap: 2.5rem;
+  margin: 2rem 0;
+}
 
-.tag__checkbox_label {
+.alcohol__checkbox_label {
+  padding-left: 0.8rem;
+  font-size: 1.25rem;
+  color: rgb(0, 0, 0);
+  letter-spacing: 3px;
+  font-family: "Raleway";
+  line-height: 2rem;
+}
+
+.ingredient__checkbox_label {
   padding-left: 0.8rem;
   font-size: 1.25rem;
   color: rgb(0, 0, 0);
