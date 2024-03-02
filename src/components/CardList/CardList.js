@@ -2,15 +2,16 @@ import { React } from "react";
 import "./CardList.css";
 import drinksList from "../../utils/drinksList";
 
-export default function CardList(props) {
+const CardList = () => {
   let fiveDrinks = [];
   let thisDrinksList = drinksList.slice(0, 5);
   thisDrinksList.forEach((drink, index) => {
     let tagList = drink.tags.join(", ")
     fiveDrinks.push(
       <li key={index}>
-        <input type="radio" name="slide" id={`c${index}`} checked />
-        <label for={`c${index}`} className="card">
+        <div className="card" style={{ background: 'url(' + drink.images[0] +')' }}>
+        <input type="radio" name="slide" id={`c${index+1}`} />
+        <label htmlFor={`c${index+1}`} className="card">
           <div className="row">
             <div className="icon">{drink.name}</div>
             <div className="description">
@@ -19,6 +20,7 @@ export default function CardList(props) {
             </div>
           </div>
         </label>
+        </div>
       </li>
     );
   });
@@ -26,11 +28,11 @@ export default function CardList(props) {
   return (
     <div className="wrapper">
       <div className="container__cards">
-      <div className="card">
         <ul>{fiveDrinks}</ul>
-      </div>
         <div className="container__card_current-recipe closed"></div>
       </div>
     </div>
   );
 };
+
+export default CardList;
