@@ -6,6 +6,7 @@ export default function CardList(props) {
   let fiveDrinks = [];
   let thisDrinksList = drinksList.slice(0, 5);
   thisDrinksList.forEach((drink, index) => {
+    let tagList = drink.tags.join(", ")
     fiveDrinks.push(
       <li key={index}>
         <input type="radio" name="slide" id={`c${index}`} checked />
@@ -14,7 +15,7 @@ export default function CardList(props) {
             <div className="icon">{drink.name}</div>
             <div className="description">
               <h4>{drink.name}</h4>
-              <p>{drink.tags}</p>
+              <p>{tagList}</p>
             </div>
           </div>
         </label>
