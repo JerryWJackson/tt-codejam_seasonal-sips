@@ -1,6 +1,6 @@
 import { React } from "react";
 import "./CardList.css";
-import drinksList from "../../utils/drinksList";
+import { drinksList } from "../../utils/drinksList";
 
 const CardList = () => {
   let fiveDrinks = [];
