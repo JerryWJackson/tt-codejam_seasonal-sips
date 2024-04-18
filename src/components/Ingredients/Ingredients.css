@@ -10,6 +10,6 @@
 
 .ingredients__list {
   columns: 30rem 3;
-  -webkit-columns: 3;
-  -moz-columns: 3;
+  -webkit-columns: 30rem 3;
+  -moz-columns: 30rem 3;
 }
