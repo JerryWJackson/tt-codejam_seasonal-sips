@@ -7,7 +7,9 @@ import Footer from "../Footer/Footer";
 import Alcohol from "../Alcohol/Alcohol";
 import Ingredients from "../Ingredients/Ingredients";
 import CardList from "../CardList/CardList";
+// import { CurrentSeasonContext } from "../../contexts/switcherSeason";
 // import ResourceCenter from "../ResourceCenter/ResourceCenter";
+
 
 const Main = (props) => {
   return (

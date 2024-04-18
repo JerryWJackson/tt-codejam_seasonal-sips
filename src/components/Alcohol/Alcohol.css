@@ -8,7 +8,7 @@
   visibility: visible;
 }
 
-ul {
+.alcohols__list {
   list-style: none;
   columns: 3;
   -webkit-columns: 3;

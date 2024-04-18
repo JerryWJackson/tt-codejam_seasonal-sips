@@ -28,7 +28,6 @@ const Alcohols = () => {
           id=""
           name={alcohol}
           value={alcohol}
-          hidden="visible"
         />
         <span className="span-for-alcohol">
           <label htmlFor="alcohol__checkbox" className="alcohol__checkbox_label">{alcohol}</label>
@@ -39,7 +38,7 @@ const Alcohols = () => {
 
   return (
     <div className="alcohols__container">
-      <ul>{alcoholsList}</ul>
+      <ul className="alcohols__list">{alcoholsList}</ul>
     </div>
   );
 };

@@ -39,7 +39,7 @@ const Ingredients = () => {
 
   return (
     <div className="ingredients__container">
-      <ul>{ingredientsList}</ul>
+      <ul className="ingredients__list">{ingredientsList}</ul>
     </div>
   );
 };

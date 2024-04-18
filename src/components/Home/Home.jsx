@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import logo from "/src/images/drinksGallery.png";
+// import { CurrentSeasonContext } from "../../contexts/switcherSeason";
 import "./Home.css";
 
 const Home = (props) => {

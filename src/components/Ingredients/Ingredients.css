@@ -3,7 +3,12 @@
   text-align: left;
   margin: 1rem;
 }
-ul {
+
+.ingredient__checkbox {
+  visibility: visible;
+}
+
+.ingredients__list {
   columns: 3;
   -webkit-columns: 3;
   -moz-columns: 3;
