@@ -29,6 +29,7 @@ const Alcohols = () => {
           id=""
           name={alcohol}
           value={alcohol}
+          hidden="visible"
         />
         <span className="span-for-alcohol">
           <label for="alcohol__checkbox" className="alcohol__checkbox_label">{alcohol}</label>

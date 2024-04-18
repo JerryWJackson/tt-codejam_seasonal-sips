@@ -16,9 +16,11 @@ const Main = (props) => {
         <Header address={props.address} />
         <div className="main__tag-selector">
           <p className="main__list_title">Pick your poison...</p>
-          <div className="alcohols_container">
-            <Alcohol />
-          </div>
+          <form className="alcohol-selector">
+            <div className="alcohols_container">
+              <Alcohol />
+            </div>
+          </form>
           <p className="main__list_title">Pick your mixers...</p>
           <div className="ingredients_container">
             <Ingredients />

@@ -1,6 +1,7 @@
 export const drinksList = [
   {
     name: "Bourbon and Peach Smash",
+    seasons: ["summer", "fall"],
     images: [
       'url("https://images.unsplash.com/photo-1691568769494-bd35c1e48917?q=80&w=1908&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1499638673689-79a0b5115d87?q=80&w=1964&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -24,6 +25,7 @@ export const drinksList = [
   },
   {
     name: "Colletti Royale",
+    seasons: ["spring", "summer"],
     images: [
       'url("https://images.unsplash.com/photo-1644247988716-e5b98d435f22?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1644320579405-7a1f22e52a55?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -46,6 +48,7 @@ export const drinksList = [
   },
   {
     name: "Gimlet",
+    seasons: ["spring", "summer"],
     images: [
       'url("https://images.unsplash.com/photo-1551538827-9c037cb4f32a?q=80&w=1965&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1623593688280-a5aec8ac4ae7?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -64,6 +67,7 @@ export const drinksList = [
   },
   {
     name: "Lemon Drop",
+    seasons: ["spring", "summer", "fall", "winter"],
     images: [
       'url("https://images.unsplash.com/photo-1639048759534-88ddc0824955?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1615887023516-9b6bcd559e87?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -84,6 +88,7 @@ export const drinksList = [
   },
   {
     name: "Orange Blossom Whiskey Sour",
+    seasons: ["spring", "summer", "fall"],
     images: [
       'url("https://plus.unsplash.com/premium_photo-1690056321886-e35b0f0268d5?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1615887023544-3a566f29d822?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -104,6 +109,7 @@ export const drinksList = [
   {
     // blank object to make filling this file easier for everyone
     name: "Blueberry Lime Mojito",
+    seasons: ["spring", "summer"],
     images: [
       'url("https://images.unsplash.com/photo-1504310578167-435ac09e69f3?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1605248152567-5af30fbe14d8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -126,6 +132,7 @@ export const drinksList = [
   },
   {
     name: "Raspberry Thyme Smash",
+    seasons: ["spring", "summer", "fall"],
     images: [
       'url("https://images.unsplash.com/photo-1595981266686-0cf387d0a608?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1595981267035-7b04ca84a82d?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -148,6 +155,7 @@ export const drinksList = [
   },
   {
     name: "Raspberry White Chocolate Latte",
+    seasons: ["fall", "winter"],
     images: [
       'url("https://images.unsplash.com/photo-1620360289473-bfafadc16c57?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1562447457-579fc34967fb?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -168,6 +176,7 @@ export const drinksList = [
   },
   {
     name: "Blackberry Bramble Cocktail",
+    seasons: ["summer", "fall"],
     images: [
       'url("https://images.unsplash.com/photo-1669144457196-7a0f484333f8?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1513816861509-09733a9f9383?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -189,6 +198,7 @@ export const drinksList = [
   },
   {
     name: "Hugo Spritz",
+    seasons: ["spring", "summer"],
     images: [
       'url("https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1556881286-fc6915169721?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -210,6 +220,7 @@ export const drinksList = [
   },
   {
     name: "Cucumber Collins",
+    seasons: ["spring", "summer", "fall"],
     images: [
       'url("https://images.unsplash.com/photo-1602298134483-f4f469306bf6?q=80&w=1885&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1597075759290-5c29a23c8a16?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -230,6 +241,7 @@ export const drinksList = [
   },
   {
     name: "Aperol Spritz",
+    seasons: ["spring", "summer", "fall", "winter"],
     images: [
       'url("https://images.unsplash.com/photo-1578467759626-f94129ea94a4?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1588685344608-514d42e02603?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -247,6 +259,7 @@ export const drinksList = [
   },
   {
     name: "Apricot Sour",
+    seasons: ["summer", "fall"],
     images: [
       'url("https://images.unsplash.com/photo-1602061257507-e0150debda3b?q=80&w=1894&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1602835124432-0ca2d2e66183?q=80&w=1930&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -268,6 +281,7 @@ export const drinksList = [
   },
   {
     name: "Butterfly Pea Lemonade",
+    seasons: ["spring", "summer", "fall", "winter"],
     images: [
       'url("https://plus.unsplash.com/premium_photo-1687871816021-38c6e4475845?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1708455398647-9f79425512fa?q=80&w=1780&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
@@ -288,6 +302,7 @@ export const drinksList = [
   },
   {
     name: "Indigo Thrill",
+    seasons: ["spring", "fall", "winter"],
     images: [
       'url("https://images.unsplash.com/photo-1582269438702-578efa319292?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',
       'url("https://images.unsplash.com/photo-1582269438732-fe4d1452df3c?q=80&w=1888&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")',

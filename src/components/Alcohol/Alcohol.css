@@ -4,6 +4,10 @@
   margin: 1rem;
 }
 
+.alcohol__checkbox {
+  visibility: visible;
+}
+
 ul {
   list-style: none;
   columns: 3;
