@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import logo from "../../images/drinksGallery.png";
+import logo from "/src/images/drinksGallery.png";
 import "./Home.css";
 
 const Home = (props) => {

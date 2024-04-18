@@ -83,24 +83,24 @@
   height: 217px;
   border: none;
   border-radius: 50%;
-  background-image: url("../../images/bannerSpring.png");
+  background-image: url("/src/images/bannerSpring.png");
   background-size: cover;
 }
 
 .home__circle.spring {
-  background-image: url("../../images/bannerSpring.png");
+  background-image: url("/src/images/bannerSpring.png");
 }
 
 .home__circle.summer {
-  background-image: url("../../images/bannerSummer.png");
+  background-image: url("/src/images/bannerSummer.png");
 }
 
 .home__circle.fall {
-  background-image: url("../../images/bannerFall.png");
+  background-image: url("/src/images/bannerFall.png");
 }
 
 .home__circle.winter {
-  background-image: url("../../images/bannerWinter.png");
+  background-image: url("/src/images/bannerWinter.png");
 }
 
 .home__description {

@@ -14,15 +14,20 @@
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.0",
-    "gh-pages": "^6.1.1"
+    "gh-pages": "^6.1.1",
+    "@svgr/core": "^8.1.0",
+    "@svgr/plugin-jsx": "^8.1.0",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.1.1"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
+    "start": "vite",
+    "build": "vite build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -d build",
+    "dev": "vite"
   },
   "eslintConfig": {
     "extends": [
