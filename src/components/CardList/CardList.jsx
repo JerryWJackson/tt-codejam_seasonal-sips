@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import "./CardList.css";
 import { drinksList } from "../../utils/drinksList";
 
@@ -13,7 +13,7 @@ const CardList = () => {
     let ingredientsList = drink.ingredients.join(", ")
     fiveDrinks.push(
       <li key={index}>
-        <div className="card" style={{ backgroundImage: 'url(' + drink.images[0] +')' }}>
+        <div className="card">
         <input type="radio" name="slide" id={`c${index+1}`} />
         <label htmlFor={`c${index+1}`} className="card">
           <div className="column">

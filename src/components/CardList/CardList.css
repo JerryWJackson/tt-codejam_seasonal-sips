@@ -39,8 +39,40 @@
   box-shadow: 0px 10px 30px -5px rgba(0, 0, 0, 0.8);
 }
 
+.card.spring {
+  background-color: rgb(92, 122, 106);
+  color: rgb(255, 255, 255);
+}
+.card.spring:hover {
+  background-color: rgba(131, 185, 156, 1);
+}
+
+.card.summer {
+  background-color: rgb(194, 56, 4);
+  color: rgb(255, 255, 255);
+}
+.card.summer:hover {
+  background-color: rgba(248, 113, 62, 1);
+}
+
+.card.fall {
+  background-color: rgb(223, 156, 77);
+  color: rgb(255, 255, 255);
+}
+.card.fall:hover {
+  background-color: rgba(202, 125, 35, 1);
+}
+
+.card.winter {
+  background-color: rgb(114, 134, 151);
+  color: rgb(255, 255, 255);
+}
+.card.winter:hover {
+  background-color: rgba(97, 123, 146, 1);
+}
+
 .card > .column {
-  color: white;
+  /* color: white; */
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
@@ -48,8 +80,8 @@
 }
 
 .card > .column > .icon {
-  background: #223;
-  color: white;
+  /* background: #223; */
+  /* color: white; */
   border-radius: 50%;
   width: 50px;
   display: flex;

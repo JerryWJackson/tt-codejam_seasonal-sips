@@ -5,6 +5,7 @@ const constants = {
     "home__circle",
     "home__caption-byline",
     "home__caption",
+    "card",
   ],
   seasons: {
     "winter": [12,1,2],

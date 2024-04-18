@@ -1,4 +1,4 @@
-import { React } from "react";
+import React from "react";
 import { drinksList } from "../../utils/drinksList";
 import "./Alcohol.css";
 
