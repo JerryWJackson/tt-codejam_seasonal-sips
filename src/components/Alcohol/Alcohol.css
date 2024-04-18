@@ -10,7 +10,7 @@
 
 .alcohols__list {
   list-style: none;
-  columns: 3;
+  columns: 30rem 3;
   -webkit-columns: 3;
   -moz-columns: 3;
 }
