@@ -8,7 +8,6 @@ const buildingredientCloud = () => {
     drink.ingredients.forEach((ingredient) => {
       if (!ingredients.includes(ingredient)) {
         ingredients.push(ingredient);
-        console.log(ingredient);
       }
     });
   });
@@ -31,7 +30,7 @@ const Ingredients = () => {
           value={ingredient}
         />
         <span className="span-for-ingredient">
-          <label for="ingredient__checkbox" className="ingredient__checkbox_label">{ingredient}</label>
+          <label htmlFor="ingredient__checkbox" className="ingredient__checkbox_label">{ingredient}</label>
         </span>
       </li>
     );

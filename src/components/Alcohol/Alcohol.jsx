@@ -8,7 +8,6 @@ const buildAlcoholCloud = () => {
     drink.alcohol.forEach((alcohol) => {
       if (!alcohols.includes(alcohol)) {
         alcohols.push(alcohol);
-        console.log(alcohols);
       }
     });
   });
@@ -32,7 +31,7 @@ const Alcohols = () => {
           hidden="visible"
         />
         <span className="span-for-alcohol">
-          <label for="alcohol__checkbox" className="alcohol__checkbox_label">{alcohol}</label>
+          <label htmlFor="alcohol__checkbox" className="alcohol__checkbox_label">{alcohol}</label>
         </span>
       </li>
     );

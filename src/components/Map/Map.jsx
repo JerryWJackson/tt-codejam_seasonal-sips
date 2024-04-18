@@ -2,8 +2,9 @@ import "./Map.css";
 import { constants } from "../../utils/constants";
 import React, { useState, useEffect } from "react";
 
-const Map = ({ address, setPin, notFound, setNotFound }) => {
+const Map = ({ address, setPin }) => {
   const [src, setSrc] = useState("");
+  const [notFound, setNotFound] = useState(true)
 
   useEffect(() => {
     const geocoderUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
