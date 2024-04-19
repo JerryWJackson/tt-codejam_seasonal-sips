@@ -12,15 +12,16 @@
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-around;
   gap: 32px;
 }
 
-.cardlist {
+.card-list {
   display: flex;
   flex-direction: column;
   flex-wrap: nowrap;
   justify-content: center;
+  gap: 32px;
 }
 
 .card {
@@ -28,7 +29,6 @@
   width: 600px;
   border-radius: 0.75rem;
   background-size: cover;
-  background: #223;
   cursor: pointer;
   overflow: hidden;
   border-radius: 2rem;
@@ -80,32 +80,33 @@
 }
 
 .card > .column > .icon {
-  /* background: #223; */
-  /* color: white; */
-  border-radius: 50%;
+  position: relative;
+  top:44px;
+  left: -24px;
   width: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin: 15px;
 }
 
 .card > .column > .description {
   display: flex;
-  justify-content: center;
   flex-direction: column;
+  justify-content: center;
+  align-content: center;
   overflow: hidden;
-  height: 80px;
+  position: relative;
+  top: -12px;
+  left: 28px;
+  height: 60px;
   width: 520px;
-  opacity: 0;
-  gap: 0.8rem;
-  transform: translateY(30px);
+  opacity: 1;
+  gap: 0.4rem;
+  /* transform: translateY(30px);
   transition-delay: 0.3s;
-  transition: all 0.3s ease;
+  transition: all 0.3s ease; */
 }
 
 .description p {
-  color: #b0b0ba;
+  /* color: #fff; */
   padding-top: 5px;
 }
 
@@ -113,10 +114,50 @@
   text-transform: uppercase;
 }
 
-/* input {
+.description.spring p
+.description.spring h4 {
+  background-color: rgb(92, 122, 106);
+  color: rgb(255, 255, 255);
+}
+.description.spring p:hover
+.description.spring h4:hover {
+  background-color: rgba(131, 185, 156, 1);
+}
+
+.description.summer p
+.description.summer h4 {
+  background-color: rgb(194, 56, 4);
+  color: rgb(255, 255, 255);
+}
+.description.summer p:hover
+.description.summer h4:hover {
+  background-color: rgba(248, 113, 62, 1);
+}
+
+.description.fall p
+.description.fall h4 {
+  background-color: rgb(223, 156, 77);
+  color: rgb(255, 255, 255);
+}
+.description.fall p:hover
+.description.fall h4:hover {
+  background-color: rgba(202, 125, 35, 1);
+}
+
+.description.winter p
+.description.winter h4 {
+  background-color: rgb(114, 134, 151);
+  color: rgb(255, 255, 255);
+}
+.description.winter p:hover
+.description.winter h4:hover {
+  background-color: rgba(97, 123, 146, 1);
+}
+
+.card input {
   display: none;
   visibility: hidden;
-} */
+}
 
 input:checked + label {
   width: 600px;
@@ -130,3 +171,4 @@ input:checked + label .description {
 ul {
   list-style: none;
 }
+

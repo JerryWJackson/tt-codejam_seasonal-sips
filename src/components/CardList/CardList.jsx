@@ -13,12 +13,12 @@ const CardList = () => {
     let ingredientsList = drink.ingredients.join(", ")
     fiveDrinks.push(
       <li key={index}>
-        <div className="card">
+        <div className="card spring">
         <input type="radio" name="slide" id={`c${index+1}`} />
         <label htmlFor={`c${index+1}`} className="card">
           <div className="column">
             <div className="icon">{index+1}</div>
-            <div className="description">
+            <div className="description spring">
               <h4>{drink.name}</h4>
               <p>{ingredientsList}</p>
             </div>
@@ -32,7 +32,7 @@ const CardList = () => {
   return (
     <div className="wrapper">
       <div className="container__cards">
-        <ul className="cardList">{fiveDrinks}</ul>
+        <ul className="card-list">{fiveDrinks}</ul>
         <div className="container__card_current-recipe closed"></div>
       </div>
     </div>
