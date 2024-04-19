@@ -14,6 +14,7 @@
   flex-wrap: nowrap;
   justify-content: space-around;
   gap: 32px;
+  margin-bottom: 80px;
 }
 
 .card-list {

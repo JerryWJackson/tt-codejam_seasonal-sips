@@ -10,7 +10,6 @@ import CardList from "../CardList/CardList";
 // import { CurrentSeasonContext } from "../../contexts/switcherSeason";
 // import ResourceCenter from "../ResourceCenter/ResourceCenter";
 
-
 const Main = (props) => {
   return (
     <>
@@ -32,8 +31,27 @@ const Main = (props) => {
       <section id="cardlist" className="cardlist">
         <CardList />
       </section>
-      <section id="map" className="main__map">
+      <section id="map" className="main__map_container">
         <div className="main__map">
+          <h4 className="main__map_title">How do you want to enjoy this drink?</h4>
+          <div className="main__map_btn-container">
+          <button
+            type="button"
+            id="home-btn"
+            onClick={props.setLocation}
+            className="main__home-btn spring"
+          >
+            Make at Home
+          </button>
+          <button
+            type="button"
+            id="away-btn"
+            onClick={props.setLocation}
+            className="main__away-btn spring"
+          >
+            Places that Serve
+          </button>
+          </div>
           <Map
             address={props.address}
             setPin={props.setPin}
