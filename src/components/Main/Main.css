@@ -6,12 +6,15 @@
 }
 
 .main__list_title {
-  padding: 2.5rem;
   font-size: 1.75rem;
   color: #233;
   letter-spacing: 3px;
   font-family: "Raleway";
   line-height: 2rem;
+}
+
+.main__tag-selector {
+  margin-bottom: 24px;
 }
 
 .alcohols_container {
