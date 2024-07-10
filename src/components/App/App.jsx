@@ -1,6 +1,6 @@
 import "./App.css";
 import React from "react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import "../../vendor/fonts.css";
 // eslint-disable-next-line
 import Home from "../Home/Home";
@@ -36,80 +36,38 @@ export default function App() {
   };
 
   const seasonalElements = constants.seasonalElements;
-  console.log(seasonalElements);
+  // console.log(seasonalElements);
   const seasons = constants.seasons;
+  console.log(currentSeason);
 
   const time = new Date();
   const curMonth = time.getMonth() + 1;
+  console.log(curMonth);
 
-  if (curMonth == 12 || curMonth == 1 || curMonth == 2) {
-    for (element in seasonalElements) {
-      console.log(element);
-      if (element.classList.contains("spring")) {
-        element.classList.remove("spring");
-      }
-      if (element.classList.contains("summer")) {
-        element.classList.remove("summer");
-      }
-      if (element.classList.contains("fall")) {
-        element.classList.remove("fall");
-      }
-      element.classList.add("winter");
+  useEffect(() => {
+    if (curMonth == 12 || curMonth == 1 || curMonth == 2) {
+      setCurrentSeason("winter");
+    } else if (curMonth == 3 || curMonth == 4 || curMonth == 5) {
+      setCurrentSeason("spring");
+    } else if (curMonth == 6 || curMonth == 7 || curMonth == 8) {
+      setCurrentSeason("summer");
+    } else {
+      setCurrentSeason("fall");
     }
-  } else if (curMonth == 3 || curMonth == 4 || curMonth == 5) {
-    for (element in seasonalElements) {
-      if (element.classList.contains("winter")) {
-        element.classList.remove("winter");
-      }
-      if (element.classList.contains("summer")) {
-        element.classList.remove("summer");
-      }
-      if (element.classList.contains("fall")) {
-        element.classList.remove("fall");
-      }
-      element.classList.add("spring");
-    }
-  } else if (curMonth == 6 || curMonth == 7 || curMonth == 8) {
-    for (element in seasonalElements) {
-      if (element.classList.contains("spring")) {
-        element.classList.remove("spring");
-      }
-      if (element.classList.contains("winter")) {
-        element.classList.remove("winter");
-      }
-      if (element.classList.contains("fall")) {
-        element.classList.remove("fall");
-      }
-      element.classList.add("summer");
-    }
-  } else {
-    for (element in seasonalElements) {
-      if (element.classList.contains("spring")) {
-        element.classList.remove("spring");
-      }
-      if (element.classList.contains("summer")) {
-        element.classList.remove("summer");
-      }
-      if (element.classList.contains("winter")) {
-        element.classList.remove("winter");
-      }
-      element.classList.add("fall");
-    }
-  }
+  }, [currentSeason]);
 
   return (
     <div className="page">
-      <CurrentSeasonContext>
-        <div className="App">
-          <Home
-            setIsLocated={setIsLocated}
-            handleScroll={handleScroll}
-            setAddress={setAddress}
-            setPin={setPin}
-          />
-          <Main />
-        </div>
-      </CurrentSeasonContext>
+      <div className="App">
+        <Home
+          setIsLocated={setIsLocated}
+          handleScroll={handleScroll}
+          setAddress={setAddress}
+          setPin={setPin}
+          currentSeason={currentSeason}
+        />
+        <Main currentSeason={currentSeason} />
+      </div>
     </div>
   );
 }

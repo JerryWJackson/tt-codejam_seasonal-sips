@@ -49,9 +49,6 @@
   line-height: 2rem;
 }
 
-.tag__list-element {
-}
-
 .main__map_container {
   display: flex;
   flex-direction: column;
@@ -78,6 +75,22 @@
   line-height: 4.5rem;
   margin-bottom: 50px;
   margin-top: 75px;
+}
+
+.main__map_title.spring {
+  color: rgb(92, 122, 106);
+}
+
+.main__map_title.summer {
+  color: rgb(194, 56, 4);
+}
+
+.main__map_title.fall {
+  color: rgb(223, 156, 77);
+}
+
+.main__map_title.winter {
+  color: rgb(114, 134, 151);
 }
 
 .main__home-btn {
@@ -185,9 +198,6 @@
 .main__footer {
   display: flex;
   justify-content: center;
-}
-
-.main__resource-center {
 }
 
 @media screen and (max-width: 800px) {
