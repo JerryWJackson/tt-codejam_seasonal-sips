@@ -8,7 +8,7 @@ import Home from "../Home/Home";
 import Main from "../Main/Main";
 // eslint-disable-next-line
 import Footer from "../Footer/Footer";
-import { constants } from "../utils/constants";
+import { constants } from "../../utils/constants";
 
 export default function App() {
   const [hasTag, setHadTag] = useState(false);
