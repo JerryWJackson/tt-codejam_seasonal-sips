@@ -36,13 +36,15 @@ export default function App() {
   };
 
   const seasonalElements = constants.seasonalElements;
+  console.log(seasonalElements);
   const seasons = constants.seasons;
 
   const time = new Date();
   const curMonth = time.getMonth() + 1;
 
   if (curMonth == 12 || curMonth == 1 || curMonth == 2) {
-    seasonalElements.forEach((element) => {
+    for (element in seasonalElements) {
+      console.log(element);
       if (element.classList.contains("spring")) {
         element.classList.remove("spring");
       }
@@ -53,9 +55,9 @@ export default function App() {
         element.classList.remove("fall");
       }
       element.classList.add("winter");
-    });
+    }
   } else if (curMonth == 3 || curMonth == 4 || curMonth == 5) {
-    seasonalElements.forEach((element) => {
+    for (element in seasonalElements) {
       if (element.classList.contains("winter")) {
         element.classList.remove("winter");
       }
@@ -66,9 +68,9 @@ export default function App() {
         element.classList.remove("fall");
       }
       element.classList.add("spring");
-    });
+    }
   } else if (curMonth == 6 || curMonth == 7 || curMonth == 8) {
-    seasonalElements.forEach((element) => {
+    for (element in seasonalElements) {
       if (element.classList.contains("spring")) {
         element.classList.remove("spring");
       }
@@ -79,9 +81,9 @@ export default function App() {
         element.classList.remove("fall");
       }
       element.classList.add("summer");
-    });
+    }
   } else {
-    seasonalElements.forEach((element) => {
+    for (element in seasonalElements) {
       if (element.classList.contains("spring")) {
         element.classList.remove("spring");
       }
@@ -92,7 +94,7 @@ export default function App() {
         element.classList.remove("winter");
       }
       element.classList.add("fall");
-    });
+    }
   }
 
   return (
