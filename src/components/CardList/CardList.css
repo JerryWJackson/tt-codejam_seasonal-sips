@@ -82,7 +82,7 @@
 
 .card > .column > .icon {
   position: relative;
-  top:44px;
+  top: 44px;
   left: -24px;
   width: 50px;
   margin: 15px;
@@ -115,43 +115,35 @@
   text-transform: uppercase;
 }
 
-.description.spring p
-.description.spring h4 {
+.description.spring p .description.spring h4 {
   background-color: rgb(92, 122, 106);
   color: rgb(255, 255, 255);
 }
-.description.spring p:hover
-.description.spring h4:hover {
+.description.spring p:hover .description.spring h4:hover {
   background-color: rgba(131, 185, 156, 1);
 }
 
-.description.summer p
-.description.summer h4 {
+.description.summer p .description.summer h4 {
   background-color: rgb(194, 56, 4);
   color: rgb(255, 255, 255);
 }
-.description.summer p:hover
-.description.summer h4:hover {
+.description.summer p:hover .description.summer h4:hover {
   background-color: rgba(248, 113, 62, 1);
 }
 
-.description.fall p
-.description.fall h4 {
+.description.fall p .description.fall h4 {
   background-color: rgb(223, 156, 77);
   color: rgb(255, 255, 255);
 }
-.description.fall p:hover
-.description.fall h4:hover {
+.description.fall p:hover .description.fall h4:hover {
   background-color: rgba(202, 125, 35, 1);
 }
 
-.description.winter p
-.description.winter h4 {
+.description.winter p .description.winter h4 {
   background-color: rgb(114, 134, 151);
   color: rgb(255, 255, 255);
 }
-.description.winter p:hover
-.description.winter h4:hover {
+.description.winter p:hover .description.winter h4:hover {
   background-color: rgba(97, 123, 146, 1);
 }
 
@@ -172,4 +164,3 @@ input:checked + label .description {
 ul {
   list-style: none;
 }
-

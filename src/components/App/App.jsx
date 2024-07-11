@@ -35,11 +35,6 @@ export default function App() {
     }, 100);
   };
 
-  const seasonalElements = constants.seasonalElements;
-  // console.log(seasonalElements);
-  const seasons = constants.seasons;
-  console.log(currentSeason);
-
   const time = new Date();
   const curMonth = time.getMonth() + 1;
   console.log(curMonth);
