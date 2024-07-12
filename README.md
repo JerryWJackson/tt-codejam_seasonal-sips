@@ -12,4 +12,17 @@ _Seasonal Sips_ offers a curated list of locally popular libations and the place
 
 ### _Seasonal comparison screenshots_
 
-<img src="src/images/seasonal-sips_landing-spring.png" width="92"> | <img src="src/images/seasonal-sips_landing-summer.png" width="92"> | <img src="src/images/seasonal-sips_landing-fall.png" width="92"> | <img src="src/images/seasonal-sips_landing-winter.png" width="92">
+<div style="display:flex; flex-direction: row; align-items: center; width: 100vw;">
+  <div style="flex:1">
+    <img src="src/images/seasonal-sips_landing-spring.png" >
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="src/images/seasonal-sips_landing-summer.png"> 
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="src/images/seasonal-sips_landing-fall.png"> 
+  </div>
+  <div style="flex:1;padding-left:10px;">
+    <img src="src/images/seasonal-sips_landing-winter.png">
+  </div>
+</div>
