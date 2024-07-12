@@ -1,6 +1,3 @@
-import CardList from "../components/CardList/CardList";
-import Footer from "../components/Footer/Footer";
-
 const constants = {
   apiKey: "AIzaSyCDJPcmSrZUgzZVFeaB9mHSKfX4JZJcKnE",
   seasonalElements: [
