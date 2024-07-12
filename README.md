@@ -10,4 +10,7 @@ _Seasonal Sips_ offers a curated list of locally popular libations and the place
 
 ## [view the website here](https://jerrywjackson.github.io/tt-codejam_seasonal-sips/)
 
-![Landing Page](src/images/Seasonal-Sips_image-01.png)
+![Landing Page - Spring](src/images/seasonal-sips_landing-spring.png width="48")
+![Landing Page - Summer](src/images/seasonal-sips_landing-summer.png)
+![Landing Page - Fall](src/images/seasonal-sips_landing-fall.png)
+![Landing Page - Winter](src/images/seasonal-sips_landing-winter.png)
