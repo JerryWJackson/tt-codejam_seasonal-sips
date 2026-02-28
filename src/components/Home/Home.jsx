@@ -13,6 +13,28 @@ const Home = (props) => {
     }
   };
 
+  const handleDetectLocation = () => {
+    if ("geolocation" in navigator) {
+      navigator.geolocation.getCurrentPosition(
+        (position) => {
+          const { latitude, longitude } = position.coords;
+          const coords = `${latitude},${longitude}`;
+          props.setIsLocated(true);
+          props.handleScroll("main");
+          props.setAddress(coords);
+        },
+        (error) => {
+          console.error("Error detecting location:", error);
+          alert(
+            "Unable to retrieve your location. Please enter your ZipCode manually.",
+          );
+        },
+      );
+    } else {
+      alert("Geolocation is not supported by your browser.");
+    }
+  };
+
   const handleEnter = (e) => {
     if (e.key === "Enter") {
       setLocation();
@@ -46,23 +68,41 @@ const Home = (props) => {
           </p>
           <div className={`home__circle ${props.currentSeason}`}></div>
         </div>
-        <div className="home__zipcode-and-button">
-          <input
-            id="search-bar"
-            type="text"
-            placeholder="Enter ZipCode"
-            className="home__search"
-            onKeyDown={handleEnter}
-            required
-          />
-          <button
-            type="button"
-            id="start-button"
-            onClick={setLocation}
-            className={`home__submit ${props.currentSeason}`}
-          >
-            FIND LIBATIONS
-          </button>
+        <div className="home__location-discovery">
+          <div className="home__option">
+            <button
+              type="button"
+              className="home__detect-btn"
+              onClick={handleDetectLocation}
+            >
+              DETECT LOCATION
+            </button>
+          </div>
+
+          <div className="home__divider">
+            <span className="home__divider-line"></span>
+            <span className="home__divider-text">OR</span>
+            <span className="home__divider-line"></span>
+          </div>
+
+          <div className="home__option home__option--manual">
+            <input
+              id="search-bar"
+              type="text"
+              placeholder="Enter ZipCode"
+              className="home__search"
+              onKeyDown={handleEnter}
+              required
+            />
+            <button
+              type="button"
+              id="start-button"
+              onClick={setLocation}
+              className={`home__submit-inline ${props.currentSeason}`}
+            >
+              FIND
+            </button>
+          </div>
         </div>
       </div>
     </div>
