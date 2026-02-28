@@ -1,4 +1,52 @@
-@import './vendor/fonts.css';
+@import "./vendor/fonts.css";
+
+:root {
+  /* Default Branding - Sophisticated Neutral */
+  --brand-color: #212529;
+  --brand-accent: rgba(33, 37, 41, 0.1);
+  --brand-hover: #495057;
+
+  /* Base Palette */
+  --bg-primary: #f8f9fa;
+  --bg-secondary: #ffffff;
+  --text-primary: #212529;
+  --text-secondary: #6c757d;
+
+  /* Glassmorphism Effect */
+  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-border: rgba(255, 255, 255, 0.3);
+  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+
+  /* Typography */
+  --font-main: "Raleway", sans-serif;
+  --font-display: "Cinzel Decorative", serif;
+  --font-accent: "Playfair Display SC", serif;
+}
+
+/* Seasonal Themes - Overriding Brand Variables */
+.App.spring {
+  --brand-color: #5c7a6a;
+  --brand-accent: rgba(92, 122, 106, 0.1);
+  --brand-hover: #83b99c;
+}
+
+.App.summer {
+  --brand-color: #c23804;
+  --brand-accent: rgba(194, 56, 4, 0.1);
+  --brand-hover: #f8713e;
+}
+
+.App.fall {
+  --brand-color: #df9c4d;
+  --brand-accent: rgba(223, 156, 77, 0.1);
+  --brand-hover: #ca7d23;
+}
+
+.App.winter {
+  --brand-color: #728697;
+  --brand-accent: rgba(114, 134, 151, 0.1);
+  --brand-hover: #617b92;
+}
 
 * {
   box-sizing: border-box;
@@ -8,5 +56,62 @@
 
 body {
   margin: 0;
-  background-color: rgb(244, 235, 236);
+  font-family: var(--font-main);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-display);
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+  transition: all 0.3s ease;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  background: none;
+  font-family: inherit;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+input {
+  outline: none;
+  font-family: inherit;
+}
+
+/* Scrollbar Styling */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--text-secondary);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
 }
