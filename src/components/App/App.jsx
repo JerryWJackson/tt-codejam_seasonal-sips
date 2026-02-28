@@ -5,6 +5,7 @@ import "../../vendor/fonts.css";
 import { constants } from "../../utils/constants";
 import Home from "../Home/Home";
 import Main from "../Main/Main";
+import DevMenu from "../DevMenu/DevMenu";
 
 export default function App() {
   const [hasTag, setHadTag] = useState(false);
@@ -19,6 +20,7 @@ export default function App() {
   const [selectedAlcohols, setSelectedAlcohols] = useState([]);
   const [selectedIngredients, setSelectedIngredients] = useState([]);
   const [isMidnight, setIsMidnight] = useState(true);
+  const [seasonOverride, setSeasonOverride] = useState(null);
 
   const toggleMidnight = () => setIsMidnight(!isMidnight);
 
@@ -48,12 +50,16 @@ export default function App() {
   console.log(curMonth);
 
   useEffect(() => {
+    if (seasonOverride) {
+      setCurrentSeason(seasonOverride);
+      return;
+    }
     const { seasons } = constants;
     const season =
       Object.keys(seasons).find((key) => seasons[key].includes(curMonth)) ||
       "spring";
     setCurrentSeason(season);
-  }, [curMonth]);
+  }, [curMonth, seasonOverride]);
 
   return (
     <div className="page">
@@ -91,6 +97,7 @@ export default function App() {
           }
           setLocation={() => handleScroll("map")}
         />
+        <DevMenu setSeasonOverride={setSeasonOverride} />
       </div>
     </div>
   );

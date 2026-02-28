@@ -9,7 +9,10 @@ describe("Drink Filtering Logic", () => {
     const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
     if (toggle) {
       fireEvent.click(toggle);
-      const springBtn = screen.getByRole("button", { name: /Spring/i });
+      const springBtn = screen.getByRole("button", {
+        name: "Spring",
+        exact: true,
+      });
       fireEvent.click(springBtn);
     }
 
@@ -18,9 +21,9 @@ describe("Drink Filtering Logic", () => {
     });
     expect(initialDrinks.length).toBeGreaterThan(0);
 
-    // Using exact match string to avoid matching "Ginger Beer"
+    // Using exact name comparison to avoid "Ginger Beer"
     const vodkaCheckbox = screen.getByRole("checkbox", {
-      name: "Vodka Vodka",
+      name: "Vodka",
       exact: true,
     });
     fireEvent.click(vodkaCheckbox);
@@ -40,19 +43,24 @@ describe("Drink Filtering Logic", () => {
     const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
     if (toggle) {
       fireEvent.click(toggle);
-      const springBtn = screen.getByRole("button", { name: /Spring/i });
+      const springBtn = screen.getByRole("button", {
+        name: "Spring",
+        exact: true,
+      });
       fireEvent.click(springBtn);
     }
 
     // Using exact string to avoid matching "Ginger Beer"
-    // Note: The CI logs show the accessible name is "Gin Gin" because of the double label issue
     const ginCheckbox = screen.getByRole("checkbox", {
-      name: "Gin Gin",
+      name: "Gin",
       exact: true,
     });
     fireEvent.click(ginCheckbox);
 
-    const limeCheckbox = screen.getByRole("checkbox", { name: /Lime/i });
+    const limeCheckbox = screen.getByRole("checkbox", {
+      name: "Lime",
+      exact: true,
+    });
     fireEvent.click(limeCheckbox);
 
     const filteredDrinks = screen.getAllByRole("heading", { level: 4 });
