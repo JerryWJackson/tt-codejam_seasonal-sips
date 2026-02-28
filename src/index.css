@@ -9,13 +9,13 @@
   /* Base Palette */
   --bg-primary: #0a0b0d; /* Deep Midnight */
   --bg-secondary: #ffffff;
-  --text-primary: #212529; /* Dark text for light surfaces (glass) */
+  --text-primary: #111111; /* Deepest black for max contrast on glass */
   --text-inverse: #f8f9fa; /* Light text for dark surfaces (backgrounds) */
 
   /* Glassmorphism Effect */
-  --glass-bg: rgba(255, 255, 255, 0.7);
-  --glass-border: rgba(255, 255, 255, 0.3);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
+  --glass-bg: rgba(255, 255, 255, 0.9); /* Increased opacity for pure white look on dark bg */
+  --glass-border: rgba(255, 255, 255, 0.4);
+  --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6);
 
   /* Typography */
   --font-main: "Raleway", sans-serif;
@@ -23,33 +23,34 @@
   --font-accent: "Playfair Display SC", serif;
 }
 
-/* Seasonal Themes - Overriding Brand Variables */
+/* Seasonal Themes - Sharpened for high contrast on light glass */
 .App.spring {
-  --brand-color: #5c7a6a;
-  --brand-accent: rgba(92, 122, 106, 0.1);
-  --brand-hover: #83b99c;
+  --brand-color: #2d5a44; /* Darker, more vibrant green */
+  --brand-accent: rgba(45, 90, 68, 0.15);
+  --brand-hover: #3d7a5c;
 }
 
 .App.summer {
-  --brand-color: #c23804;
-  --brand-accent: rgba(194, 56, 4, 0.1);
-  --brand-hover: #f8713e;
+  --brand-color: #d84315; /* More vibrant orange-red */
+  --brand-accent: rgba(216, 67, 21, 0.15);
+  --brand-hover: #ff5722;
 }
 
 .App.fall {
-  --brand-color: #df9c4d;
-  --brand-accent: rgba(223, 156, 77, 0.1);
-  --brand-hover: #ca7d23;
+  --brand-color: #b45b00; /* Richer amber */
+  --brand-accent: rgba(180, 91, 0, 0.15);
+  --brand-hover: #e67e22;
 }
 
 .App.winter {
-  --brand-color: #728697;
-  --brand-accent: rgba(114, 134, 151, 0.1);
-  --brand-hover: #617b92;
+  --brand-color: #2c3e50; /* Deep slate blue */
+  --brand-accent: rgba(44, 62, 80, 0.15);
+  --brand-hover: #34495e;
 }
 
 /* Reset partials - removed aggressive * selector */
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   width: 100%;
@@ -64,7 +65,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: var(--font-display);
   font-weight: 400;
 }

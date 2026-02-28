@@ -29,6 +29,8 @@
   font-family: var(--font-display);
   font-size: 2rem;
   color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
   margin-bottom: 1rem;
 }
 
