@@ -1,45 +1,41 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { drinksList } from "../../utils/drinksList";
-import "./Ingredients.css";
+import "../Alcohol/Alcohol.css";
 
-const ingredients = [];
-const buildingredientCloud = () => {
-  drinksList.forEach((drink) => {
-    drink.ingredients.forEach((ingredient) => {
-      if (!ingredients.includes(ingredient)) {
-        ingredients.push(ingredient);
-      }
+const Ingredients = ({ selectedIngredients, toggleIngredient }) => {
+  const ingredients = useMemo(() => {
+    const list = new Set();
+    drinksList.forEach((drink) => {
+      drink.ingredients.forEach((ing) => list.add(ing));
     });
-  });
-  console.log(ingredients);
-};
-buildingredientCloud();
-
-ingredients.sort();
-
-const Ingredients = () => {
-  let ingredientsList = [];
-  ingredients.forEach((ingredient, index) => {
-    ingredientsList.push(
-      <li key={index}>
-        <input
-          className="ingredient__checkbox"
-          type="checkbox"
-          id=""
-          name={ingredient}
-          value={ingredient}
-        />
-        <span className="span-for-ingredient">
-          <label htmlFor="ingredient__checkbox" className="ingredient__checkbox_label">{ingredient}</label>
-        </span>
-      </li>
-    );
-  });
-
+    return Array.from(list).sort();
+  }, []);
 
   return (
     <div className="ingredients__container">
-      <ul className="ingredients__list">{ingredientsList}</ul>
+      <ul className="ingredients__list">
+        {ingredients.map((ingredient, index) => (
+          <li key={ingredient}>
+            <input
+              className="ingredient__checkbox"
+              type="checkbox"
+              id={`ingredient-${index}`}
+              name={ingredient}
+              value={ingredient}
+              checked={selectedIngredients.includes(ingredient)}
+              onChange={() => toggleIngredient(ingredient)}
+            />
+            <span className="span-for-ingredient">
+              <label
+                htmlFor={`ingredient-${index}`}
+                className="ingredient__checkbox_label"
+              >
+                {ingredient}
+              </label>
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };

@@ -1,17 +1,3 @@
 .ingredients__container {
-  gap: 0.5rem;
-  text-align: left;
-  padding: 0;
-  margin: 0;
-}
-
-.ingredient__checkbox {
-  visibility: visible;
-}
-
-.ingredients__list {
-  list-style: none;
-  columns: 30rem 3;
-  -webkit-columns: 30rem 3;
-  -moz-columns: 30rem 3;
+  /* Inherits from Alcohol.css or can be kept empty if shared */
 }

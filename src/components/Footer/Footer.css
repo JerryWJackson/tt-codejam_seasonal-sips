@@ -1,71 +1,45 @@
 .footer {
-  font-size: 16px;
+  width: 95%;
+  max-width: 1200px;
+  padding: 3rem;
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
-}
-
-.footer.spring {
-  background-color: rgb(92, 122, 106);
-  color: rgb(244, 235, 236);
-}
-
-.footer.summer {
-  background-color: rgb(194, 56, 4);
-  color: rgb(244, 235, 236);
-}
-
-.footer.fall {
-  background-color: rgb(223, 156, 77);
-  color: rgb(244, 235, 236);
-}
-
-.footer.winter {
-  background-color: rgb(114, 134, 151);
-  color: rgb(244, 235, 236);
+  gap: 2rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--glass-border);
+  border-top: 8px solid var(--brand-color);
+  border-radius: 2rem;
+  box-shadow: var(--glass-shadow);
+  margin: 0 auto var(--gap-standard) auto;
+  transition: all 0.5s ease;
+  color: var(--text-primary);
 }
 
 .footer__title {
-  font-family: "Cinzel Decorative", serif;
-  gap: 3px;
-  font-style: italic;
-  font-weight: 400;
-  padding: 1.2rem 0;
-  margin-top: 15px;
-  font-size: 22px;
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  margin: 0;
+  color: var(--text-primary);
 }
 
 .footer__names {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding-bottom: 10px;
-  gap: 15px;
-  font-family: "Raleway", serif;
-  font-weight: 400;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  color: var(--text-primary);
+  opacity: 0.8;
+  font-family: var(--font-main);
+  font-size: 0.9rem;
 }
-
-/* .footer__names.spring {
-  color: rgb(92, 122, 106);
-}
-
-.footer__names.summer {
-  color: rgb(194, 56, 4);
-}
-
-.footer__names.fall {
-  color: rgb(223, 156, 77);
-}
-
-.footer__names.winter {
-  color: rgb(114, 134, 151);
-} */
 
 .footer__year {
-  font-family: "Raleway", serif;
-  color: rgb(244, 235, 236);
-  padding: 0 0 1.2rem 0;
-  align-self: flex-end;
-  margin-right: 30px;
+  font-family: var(--font-main);
+  font-size: 0.8rem;
+  color: var(--text-primary);
+  opacity: 0.6;
+  margin-top: 1rem;
 }
