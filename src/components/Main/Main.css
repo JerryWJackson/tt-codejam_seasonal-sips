@@ -20,6 +20,7 @@
   width: 95%;
   max-width: 1200px;
   margin: 0 auto;
+  color: var(--text-primary);
 }
 
 .main__list_title {
@@ -54,6 +55,7 @@
   width: 95%;
   max-width: 1200px;
   margin: 4rem auto;
+  color: var(--text-primary);
 }
 
 .main__map_title {

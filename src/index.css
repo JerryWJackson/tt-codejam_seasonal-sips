@@ -7,15 +7,15 @@
   --brand-hover: #495057;
 
   /* Base Palette */
-  --bg-primary: #f8f9fa;
+  --bg-primary: #0a0b0d; /* Deep Midnight */
   --bg-secondary: #ffffff;
-  --text-primary: #212529;
-  --text-secondary: #6c757d;
+  --text-primary: #212529; /* Dark text for light surfaces (glass) */
+  --text-inverse: #f8f9fa; /* Light text for dark surfaces (backgrounds) */
 
   /* Glassmorphism Effect */
-  --glass-bg: rgba(255, 255, 255, 0.7);
+  --glass-bg: rgba(255, 255, 255, 0.85); /* Slightly more opaque for dark bg contrast */
   --glass-border: rgba(255, 255, 255, 0.3);
-  --glass-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.15);
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode depth */
 
   /* Typography */
   --font-main: "Raleway", sans-serif;
@@ -58,7 +58,7 @@ body {
   margin: 0;
   font-family: var(--font-main);
   background-color: var(--bg-primary);
-  color: var(--text-primary);
+  color: var(--text-inverse); /* Default text to light for dark background */
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
