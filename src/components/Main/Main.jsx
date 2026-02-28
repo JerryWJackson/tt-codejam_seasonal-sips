@@ -36,7 +36,7 @@ const Main = (props) => {
           </div>
         </div>
       </section>
-      <section id="cardlist" className="cardlist">
+      <section id="cardlist" className="main__gallery_container">
         <CardList
           currentSeason={props.currentSeason}
           selectedAlcohols={props.selectedAlcohols}
