@@ -15,18 +15,16 @@ describe("Seasonal & Theme Transitions", () => {
       const summerBtn = screen.getByRole("button", { name: /Summer/i });
       fireEvent.click(summerBtn);
 
-      // The CI logs show the class is on an element inside .page, or maybe .page itself
-      // Let's check both or just find the one with the class
-      const page =
-        document.querySelector(".page") || document.querySelector(".App");
-      expect(page.className).toContain("summer");
+      // Classes are on the .App div in the latest version
+      const appElement = document.querySelector(".App");
+      expect(appElement).toHaveClass("summer");
     }
   });
 
   test("toggles Midnight Mode", async () => {
     render(<App />);
 
-    // Based on CI dump, 'midnight' class is on the .App div
+    // Classes are on the .App div
     const appElement = document.querySelector(".App");
     expect(appElement).toHaveClass("midnight");
 
