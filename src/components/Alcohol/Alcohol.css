@@ -1,17 +1,58 @@
-.alcohols__container {
-  gap: 0.5rem;
-  text-align: left;
+.alcohols__container,
+.ingredients__container {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.alcohols__list,
+.ingredients__list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  list-style: none;
   padding: 0;
   margin: 0;
 }
 
-.alcohol__checkbox {
-  visibility: visible;
+li {
+  display: flex;
+  align-items: center;
 }
 
-.alcohols__list {
-  list-style: none;
-  columns: 30rem 3;
-  -webkit-columns: 30rem 3;
-  -moz-columns: 30rem 3;
+.alcohol__checkbox,
+.ingredient__checkbox {
+  display: none;
+}
+
+.alcohol__checkbox_label,
+.ingredient__checkbox_label {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background: var(--bg-secondary);
+  border: 1px solid var(--glass-border);
+  border-radius: 2rem;
+  font-family: var(--font-main);
+  font-size: 1rem;
+  color: var(--text-primary);
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.alcohol__checkbox_label:hover,
+.ingredient__checkbox_label:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-color: var(--brand-color);
+}
+
+.alcohol__checkbox:checked + .span-for-alcohol .alcohol__checkbox_label,
+.ingredient__checkbox:checked
+  + .span-for-ingredient
+  .ingredient__checkbox_label {
+  background: var(--brand-color);
+  color: white;
+  border-color: var(--brand-color);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }
