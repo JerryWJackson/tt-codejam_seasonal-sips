@@ -1,10 +1,10 @@
 .main {
   display: flex;
   flex-direction: column;
-  padding: 4rem 0;
+  padding: 0 0 var(--gap-standard) 0;
   width: 100%;
   margin: 0 auto;
-  gap: 4rem;
+  gap: var(--gap-standard);
 }
 
 .main__tag-selector {
@@ -50,6 +50,23 @@
   overflow: hidden;
 }
 
+.main__map_container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--glass-border);
+  border-top: 8px solid var(--brand-color);
+  box-shadow: var(--glass-shadow);
+  width: min(1200px, 95%);
+  margin: 0 auto var(--gap-standard) auto;
+  color: var(--text-primary);
+}
+
 .alcohols_container,
 .ingredients_container {
   display: flex;
@@ -59,83 +76,60 @@
   padding: 1rem 0;
 }
 
-.main__map_container {
+.alcohol-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__map {
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 3rem;
-  background: var(--glass-bg);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  padding: 4rem 2rem;
-  border-radius: 2rem;
-  border: 1px solid var(--glass-border);
-  border-top: 8px solid var(--brand-color);
-  box-shadow: var(--glass-shadow);
-  width: min(1200px, 95%);
-  margin: 4rem auto;
-  color: var(--text-primary);
+  gap: 2rem;
 }
 
 .main__map_title {
-  font-family: var(--font-display);
-  font-size: 2.5rem;
-  text-align: center;
   margin: 0;
-  color: var(--brand-color);
-  transition: color 0.5s ease;
+  font-size: 1.75rem;
+  letter-spacing: 1px;
 }
 
 .main__map_btn-container {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 40px; /* Synchronized per user request */
   width: 100%;
-  max-width: 600px;
-  margin: 0 auto 10px auto;
 }
 
 .main__home-btn,
 .main__away-btn {
-  flex: 1;
-  padding: 1.25rem;
+  padding: 0.75rem 1.5rem;
   border-radius: 2rem;
-  font-size: 1.1rem;
   font-weight: 600;
-  color: white;
-  background-color: var(--brand-color);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.main__home-btn:hover,
-.main__away-btn:hover {
-  transform: translateY(-2px);
-  background-color: var(--brand-hover);
-  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
-}
-
-@media (max-width: 768px) {
-  .main {
-    padding: 2rem 1rem;
-  }
-  .main__map_container {
-    padding: 2rem 1.5rem;
-  }
-  .main__map_btn-container {
-    flex-direction: column;
-  }
-  .main__map_title {
-    font-size: 1.75rem;
-  }
+  letter-spacing: 1px;
+  transition: all 0.3s ease;
+  border: 2px solid transparent;
+  background: var(--brand-accent);
+  color: var(--brand-color);
 }
 
 .main__home-btn.active,
 .main__away-btn.active {
-  background-color: var(--brand-color) !important;
-  color: white !important;
-  transform: translateY(-2px);
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-  border: 3px solid white;
-  outline: 2px solid var(--brand-hover);
+  background: var(--brand-color);
+  color: white;
+  border: 2px solid var(--brand-color);
+  box-shadow: 0 0 0 2px white, 0 0 0 4px var(--brand-color); /* Double-border branding */
+}
+
+@media (max-width: 768px) {
+  .main {
+    gap: 1.5rem;
+  }
+  .main__map_btn-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
 }

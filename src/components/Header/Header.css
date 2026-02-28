@@ -10,7 +10,7 @@
   border: 1px solid var(--glass-border);
   border-top: 8px solid var(--brand-color);
   box-shadow: var(--glass-shadow);
-  margin: 0 auto 2rem auto;
+  margin: 0 auto;
   width: min(1200px, 95%);
   color: var(--text-primary);
 }
@@ -20,21 +20,22 @@
   text-align: center;
 }
 
-.header__container-title {
-  font-family: var(--font-display);
+.header__description {
+  margin-top: 1.5rem;
+  font-size: 1.1rem;
+  opacity: 1;
+}
+
+.header__title {
   font-size: clamp(2rem, 5vw, 3rem);
-  margin: 0;
   color: var(--brand-color);
+  margin: 0;
   font-weight: 700;
-  letter-spacing: 2px;
-  transition: color 0.5s ease;
+  letter-spacing: 1px;
 }
 
 @media (max-width: 768px) {
   .header {
-    padding: 2rem 1rem;
-  }
-  .header__container-title {
-    font-size: 1.75rem;
+    padding: 2rem 1.5rem;
   }
 }

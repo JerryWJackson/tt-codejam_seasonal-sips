@@ -21,34 +21,37 @@
   --font-main: "Raleway", sans-serif;
   --font-display: "Cinzel Decorative", serif;
   --font-accent: "Playfair Display SC", serif;
+
+  /* Layout */
+  --gap-standard: 2rem;
 }
 
 /* Midnight Mode Override */
-.App.midnight {
+.page.midnight {
   --bg-primary: #0a0b0d; /* Deep Midnight */
   --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6);
 }
 
 /* Seasonal Themes - Sharpened for high contrast on light glass */
-.App.spring {
+.page.spring {
   --brand-color: #2d5a44; /* Darker, more vibrant green */
   --brand-accent: rgba(45, 90, 68, 0.15);
   --brand-hover: #3d7a5c;
 }
 
-.App.summer {
+.page.summer {
   --brand-color: #d84315; /* More vibrant orange-red */
   --brand-accent: rgba(216, 67, 21, 0.15);
   --brand-hover: #ff5722;
 }
 
-.App.fall {
+.page.fall {
   --brand-color: #b45b00; /* Richer amber */
   --brand-accent: rgba(180, 91, 0, 0.15);
   --brand-hover: #e67e22;
 }
 
-.App.winter {
+.page.winter {
   --brand-color: #2c3e50; /* Deep slate blue */
   --brand-accent: rgba(44, 62, 80, 0.15);
   --brand-hover: #34495e;
