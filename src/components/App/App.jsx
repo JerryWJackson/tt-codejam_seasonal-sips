@@ -18,6 +18,9 @@ export default function App() {
   const [searchType, setSearchType] = useState("away"); // Default to bars
   const [selectedAlcohols, setSelectedAlcohols] = useState([]);
   const [selectedIngredients, setSelectedIngredients] = useState([]);
+  const [isMidnight, setIsMidnight] = useState(true);
+
+  const toggleMidnight = () => setIsMidnight(!isMidnight);
 
   const toggleFilter = (item, list, setList) => {
     setList((prev) =>
@@ -54,13 +57,15 @@ export default function App() {
 
   return (
     <div className="page">
-      <div className={`App ${currentSeason}`}>
+      <div className={`App ${currentSeason} ${isMidnight ? "midnight" : ""}`}>
         <Home
           setIsLocated={setIsLocated}
           handleScroll={handleScroll}
           setAddress={setAddress}
           setPin={setPin}
           currentSeason={currentSeason}
+          isMidnight={isMidnight}
+          toggleMidnight={toggleMidnight}
         />
         <Main
           currentSeason={currentSeason}

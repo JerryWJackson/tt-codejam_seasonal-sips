@@ -46,6 +46,13 @@ const Home = (props) => {
   return (
     <div className="home">
       <div className="home__header">
+        <button
+          className="home__theme-toggle"
+          onClick={props.toggleMidnight}
+          aria-label="Toggle Theme"
+        >
+          {props.isMidnight ? "🌙" : "☀️"}
+        </button>
         <p className={`home__caption ${props.currentSeason}`}>Seasonal Sips</p>
         <p className={`home__caption-byline ${props.currentSeason}`}>
           Curating Seasonal Libations
