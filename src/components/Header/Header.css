@@ -3,7 +3,9 @@
   flex-direction: column;
   align-items: center;
   padding: 4rem 2rem;
-  background: var(--bg-secondary);
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
   border-radius: 2rem;
   border: 1px solid var(--glass-border);
   border-top: 8px solid var(--brand-color);

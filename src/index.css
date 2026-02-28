@@ -13,9 +13,9 @@
   --text-inverse: #f8f9fa; /* Light text for dark surfaces (backgrounds) */
 
   /* Glassmorphism Effect */
-  --glass-bg: rgba(255, 255, 255, 0.85); /* Slightly more opaque for dark bg contrast */
+  --glass-bg: rgba(255, 255, 255, 0.7);
   --glass-border: rgba(255, 255, 255, 0.3);
-  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5); /* Stronger shadow for dark mode depth */
+  --glass-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.5);
 
   /* Typography */
   --font-main: "Raleway", sans-serif;
@@ -48,28 +48,23 @@
   --brand-hover: #617b92;
 }
 
-* {
-  box-sizing: border-box;
+/* Reset partials - removed aggressive * selector */
+html, body {
   margin: 0;
   padding: 0;
+  width: 100%;
 }
 
 body {
-  margin: 0;
   font-family: var(--font-main);
   background-color: var(--bg-primary);
-  color: var(--text-inverse); /* Default text to light for dark background */
+  color: var(--text-inverse);
   line-height: 1.6;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-family: var(--font-display);
   font-weight: 400;
 }
@@ -82,6 +77,8 @@ a {
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 button {
@@ -90,12 +87,22 @@ button {
   outline: none;
   background: none;
   font-family: inherit;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 input {
   outline: none;
   font-family: inherit;
+}
+
+/* Global Layout Utilities */
+.page {
+  width: 100%;
+  background-color: var(--bg-primary);
+}
+
+.App {
+  width: 100%;
+  min-height: 100vh;
 }
 
 /* Scrollbar Styling */
@@ -108,10 +115,6 @@ input {
 }
 
 ::-webkit-scrollbar-thumb {
-  background: var(--text-secondary);
+  background: var(--brand-color);
   border-radius: 4px;
-}
-
-::-webkit-scrollbar-thumb:hover {
-  background: var(--text-primary);
 }
