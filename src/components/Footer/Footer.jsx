@@ -15,7 +15,7 @@ const Footer = (props) => {
       </div>
       <div className={`footer__year ${props.currentSeason}`}>
         {" "}
-        &#x24B8; 2024
+        &#x24B8; 2024 - 2026
       </div>
     </footer>
   );
