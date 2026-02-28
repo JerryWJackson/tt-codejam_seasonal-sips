@@ -10,6 +10,7 @@
 }
 
 .home__header {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -25,6 +26,31 @@
   color: var(--text-primary);
   width: min(1200px, 95%);
   margin: 0 auto;
+}
+
+.home__theme-toggle {
+  position: absolute;
+  top: 1.5rem;
+  right: 1.5rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  background: var(--glass-bg);
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  z-index: 10;
+}
+
+.home__theme-toggle:hover {
+  transform: scale(1.1) rotate(15deg);
+  background: white;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
 .home__caption {
