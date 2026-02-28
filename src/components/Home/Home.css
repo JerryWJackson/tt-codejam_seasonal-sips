@@ -24,6 +24,7 @@
   border: 1px solid var(--glass-border);
   border-top: 8px solid var(--brand-color);
   box-shadow: var(--glass-shadow);
+  color: var(--text-primary);
 }
 
 .home__caption {
