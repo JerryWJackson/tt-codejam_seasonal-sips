@@ -40,20 +40,16 @@ export default function App() {
   console.log(curMonth);
 
   useEffect(() => {
-    if (curMonth == 12 || curMonth == 1 || curMonth == 2) {
-      setCurrentSeason("winter");
-    } else if (curMonth == 3 || curMonth == 4 || curMonth == 5) {
-      setCurrentSeason("spring");
-    } else if (curMonth == 6 || curMonth == 7 || curMonth == 8) {
-      setCurrentSeason("summer");
-    } else {
-      setCurrentSeason("fall");
-    }
-  }, [currentSeason]);
+     const { seasons } = constants;
+     const season =
+       Object.keys(seasons).find((key) => seasons[key].includes(curMonth)) ||
+       "spring";
+     setCurrentSeason(season);
+  }, [curMonth]);
 
   return (
     <div className="page">
-      <div className="App">
+      <div className={`App ${currentSeason}`}>
         <Home
           setIsLocated={setIsLocated}
           handleScroll={handleScroll}
