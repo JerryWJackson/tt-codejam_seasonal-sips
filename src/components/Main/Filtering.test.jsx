@@ -9,10 +9,8 @@ describe("Drink Filtering Logic", () => {
     const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
     if (toggle) {
       fireEvent.click(toggle);
-      const springBtn = screen.getByRole("button", {
-        name: "Spring",
-        exact: true,
-      });
+      // Use regex to be resilient to emoji presence
+      const springBtn = screen.getByRole("button", { name: /Spring/i });
       fireEvent.click(springBtn);
     }
 
@@ -21,7 +19,7 @@ describe("Drink Filtering Logic", () => {
     });
     expect(initialDrinks.length).toBeGreaterThan(0);
 
-    // Using exact name comparison to avoid "Ginger Beer"
+    // Using exact match string. The "doubled name" seems to have vanished in the latest environment.
     const vodkaCheckbox = screen.getByRole("checkbox", {
       name: "Vodka",
       exact: true,
@@ -43,20 +41,18 @@ describe("Drink Filtering Logic", () => {
     const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
     if (toggle) {
       fireEvent.click(toggle);
-      const springBtn = screen.getByRole("button", {
-        name: "Spring",
-        exact: true,
-      });
+      const springBtn = screen.getByRole("button", { name: /Spring/i });
       fireEvent.click(springBtn);
     }
 
-    // Using exact string to avoid matching "Ginger Beer"
+    // Exact name to avoid "Ginger Beer"
     const ginCheckbox = screen.getByRole("checkbox", {
       name: "Gin",
       exact: true,
     });
     fireEvent.click(ginCheckbox);
 
+    // Exact name for Lime
     const limeCheckbox = screen.getByRole("checkbox", {
       name: "Lime",
       exact: true,

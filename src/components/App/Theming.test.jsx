@@ -15,7 +15,7 @@ describe("Seasonal & Theme Transitions", () => {
       const summerBtn = screen.getByRole("button", { name: /Summer/i });
       fireEvent.click(summerBtn);
 
-      // Classes are on the .App div in the latest version
+      // The App div holds the seasonal and midnight classes
       const appElement = document.querySelector(".App");
       expect(appElement).toHaveClass("summer");
     }
@@ -24,7 +24,7 @@ describe("Seasonal & Theme Transitions", () => {
   test("toggles Midnight Mode", async () => {
     render(<App />);
 
-    // Classes are on the .App div
+    // The App div holds the seasonal and midnight classes
     const appElement = document.querySelector(".App");
     expect(appElement).toHaveClass("midnight");
 
