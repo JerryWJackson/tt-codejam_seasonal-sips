@@ -3,27 +3,37 @@
   "homepage": "http://JerryWJackson.github.io/tt-codejam_seasonal-sips",
   "version": "0.1.0",
   "private": true,
+  "type": "module",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-scripts": "^5.0.1",
     "web-vitals": "^2.1.4"
+  },
+  "overrides": {
+    "esbuild": "0.25.0"
+  },
+  "engines": {
+    "node": ">=20.19.0"
   },
   "devDependencies": {
     "@babel/plugin-proposal-private-property-in-object": "7.21.0",
     "@svgr/core": "^8.1.0",
     "@svgr/plugin-jsx": "^8.1.0",
-    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react": "^4.3.4",
+    "@vitest/ui": "^3.0.7",
     "gh-pages": "^6.1.1",
-    "vite": "^5.1.1"
+    "jsdom": "^22.1.0",
+    "vite": "^7.3.1",
+    "vitest": "^3.0.7"
   },
   "scripts": {
     "start": "vite",
     "build": "vite build",
-    "test": "react-scripts test",
+    "test": "vitest",
+    "test:ui": "vitest --ui",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d dist",
@@ -31,8 +41,8 @@
   },
   "eslintConfig": {
     "extends": [
-      "react-app",
-      "react-app/jest"
+      "eslint:recommended",
+      "plugin:react/recommended"
     ]
   },
   "browserslist": {
