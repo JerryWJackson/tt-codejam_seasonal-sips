@@ -19,17 +19,29 @@ const Main = (props) => {
           <p className="main__list_title">Pick your poison...</p>
           <form className="alcohol-selector">
             <div className="alcohols_container">
-              <Alcohol currentSeason={props.currentSeason} />
+              <Alcohol
+                currentSeason={props.currentSeason}
+                selectedAlcohols={props.selectedAlcohols}
+                toggleAlcohol={props.toggleAlcohol}
+              />
             </div>
           </form>
           <p className="main__list_title">Pick your mixers...</p>
           <div className="ingredients_container">
-            <Ingredients currentSeason={props.currentSeason} />
+            <Ingredients
+              currentSeason={props.currentSeason}
+              selectedIngredients={props.selectedIngredients}
+              toggleIngredient={props.toggleIngredient}
+            />
           </div>
         </div>
       </section>
-      <section id="cardlist" className="cardlist">
-        <CardList currentSeason={props.currentSeason} />
+      <section id="cardlist" className="main__gallery_container">
+        <CardList
+          currentSeason={props.currentSeason}
+          selectedAlcohols={props.selectedAlcohols}
+          selectedIngredients={props.selectedIngredients}
+        />
       </section>
       <section id="map" className="main__map_container">
         <div className="main__map">
@@ -40,16 +52,22 @@ const Main = (props) => {
             <button
               type="button"
               id="home-btn"
-              onClick={props.setLocation}
-              className={`main__home-btn ${props.currentSeason}`}
+              onClick={() => {
+                props.setSearchType("home");
+                props.handleScroll("map");
+              }}
+              className={`main__home-btn ${props.currentSeason} ${props.searchType === "home" ? "active" : ""}`}
             >
               Make at Home
             </button>
             <button
               type="button"
               id="away-btn"
-              onClick={props.setLocation}
-              className={`main__away-btn ${props.currentSeason}`}
+              onClick={() => {
+                props.setSearchType("away");
+                props.handleScroll("map");
+              }}
+              className={`main__away-btn ${props.currentSeason} ${props.searchType === "away" ? "active" : ""}`}
             >
               Places that Serve
             </button>
@@ -59,10 +77,11 @@ const Main = (props) => {
             setPin={props.setPin}
             notFound={props.notFound}
             setNotFound={props.setNotFound}
+            searchType={props.searchType}
           />
         </div>
       </section>
-      <section id="footer" className="footer">
+      <section id="footer">
         <Footer currentSeason={props.currentSeason} />
       </section>
     </>

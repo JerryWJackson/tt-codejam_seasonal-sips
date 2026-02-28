@@ -2,35 +2,23 @@ import "./Map.css";
 import { constants } from "../../utils/constants";
 import React, { useState, useEffect } from "react";
 
-const Map = ({ address, setPin }) => {
+const Map = ({ address, setPin, notFound, setNotFound, searchType }) => {
   const [src, setSrc] = useState("");
-  const [notFound, setNotFound] = useState(true)
 
   useEffect(() => {
-    const geocoderUrl = `https://maps.googleapis.com/maps/api/geocode/json?address=${encodeURIComponent(
-      address
-    )}&key=${constants.apiKey}`;
-
-    fetch(geocoderUrl)
-      .then((res) => res.json())
-      .then((data) => {
-        if (data.results && data.results.length > 0) {
-          console.log(data);
-          const embedUrl = `https://www.google.com/maps/embed/v1/search?q=+recycling+centers+${encodeURIComponent(
-            address
-          )}&key=${constants.apiKey}`;
-
-          setSrc(embedUrl);
-
-          setNotFound(false);
-        } else if (data.results && data.results.length === 0) {
-          setNotFound(true);
-        }
-      })
-      .catch((err) => {
-        console.error("Requested resource not found", err);
-      });
-  }, [address]);
+    if (address) {
+      const typeQuery =
+        searchType === "home"
+          ? "liquor stores and grocery stores"
+          : "bars and cocktail lounges";
+      const query = encodeURIComponent(`${typeQuery} near ${address}`);
+      const embedUrl = `https://www.google.com/maps/embed/v1/search?key=${constants.apiKey}&q=${query}`;
+      setSrc(embedUrl);
+      setNotFound(false);
+    } else {
+      setNotFound(true);
+    }
+  }, [address, setNotFound, searchType]);
 
   return (
     <>

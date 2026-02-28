@@ -1,216 +1,154 @@
 .main {
   display: flex;
-  flex-flow: column wrap;
-  margin: 0;
-  min-width: 320px;
-}
-
-.main__list_title {
-  font-size: 1.75rem;
-  color: #233;
-  letter-spacing: 3px;
-  font-family: "Raleway";
-  line-height: 2rem;
+  flex-direction: column;
+  padding: 0 0 var(--gap-standard) 0;
+  width: 100%;
+  margin: 0 auto;
+  gap: var(--gap-standard);
 }
 
 .main__tag-selector {
-  margin-bottom: 24px;
-}
-
-.alcohols_container {
   display: flex;
-  justify-content: space-around;
-  gap: 2.5rem;
-  margin: 2rem 0;
+  flex-direction: column;
+  gap: 2rem;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--glass-border);
+  border-top: 8px solid var(--brand-color);
+  box-shadow: var(--glass-shadow);
+  width: min(1200px, 95%);
+  margin: 0 auto;
+  color: var(--text-primary);
 }
 
-.ingredients_container {
+.main__list_title {
+  font-family: var(--font-display);
+  font-size: 2rem;
+  color: var(--text-primary);
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin-bottom: 1rem;
+}
+
+.main__gallery_container {
   display: flex;
-  justify-content: space-around;
-  gap: 2.5rem;
-  margin: 2rem 0;
-}
-
-.alcohol__checkbox_label {
-  padding-left: 0.8rem;
-  font-size: 1.25rem;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  font-family: "Raleway";
-  line-height: 2rem;
-}
-
-.ingredient__checkbox_label {
-  padding-left: 0.8rem;
-  font-size: 1.25rem;
-  color: rgb(0, 0, 0);
-  letter-spacing: 3px;
-  font-family: "Raleway";
-  line-height: 2rem;
+  flex-direction: column;
+  align-items: center;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--glass-border);
+  border-top: 8px solid var(--brand-color);
+  box-shadow: var(--glass-shadow);
+  width: min(1200px, 95%);
+  margin: 0 auto var(--gap-standard) auto;
+  overflow: hidden;
 }
 
 .main__map_container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 75px;
-  margin-bottom: 75px;
+  background: var(--glass-bg);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  padding: 3rem 2rem;
+  border-radius: 2rem;
+  border: 1px solid var(--glass-border);
+  border-top: 8px solid var(--brand-color);
+  box-shadow: var(--glass-shadow);
+  width: min(1200px, 95%);
+  margin: 0 auto var(--gap-standard) auto;
+  color: var(--text-primary);
+}
+
+.alcohols_container,
+.ingredients_container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem 0;
+}
+
+.alcohol-selector {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.main__map {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+}
+
+.main__map_title {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  text-align: center;
+  margin: 0;
+  color: var(--brand-color);
+  transition: color 0.5s ease;
 }
 
 .main__map_btn-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-}
-
-.main__map_title {
-  text-align: center;
-  margin: 0;
-  font-family: "Cinzel Decorative", serif;
-  font-size: 2.5rem;
-  font-weight: 400;
-  color: rgb(92, 122, 106);
-  text-transform: lowercase;
-  max-width: 900px;
-  line-height: 4.5rem;
-  margin-bottom: 50px;
-  margin-top: 75px;
-}
-
-.main__map_title.spring {
-  color: rgb(92, 122, 106);
-}
-
-.main__map_title.summer {
-  color: rgb(194, 56, 4);
-}
-
-.main__map_title.fall {
-  color: rgb(223, 156, 77);
-}
-
-.main__map_title.winter {
-  color: rgb(114, 134, 151);
-}
-
-.main__home-btn {
-  margin: 0;
-  margin-bottom: 40px;
-  width: 24rem;
-  height: 4rem;
-  border: none;
-  border-radius: 2rem;
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-}
-
-.main__home-btn.spring {
-  background-color: rgb(92, 122, 106);
-  color: rgb(255, 255, 255);
-}
-
-.main__home-btn.spring:hover {
-  background-color: rgba(131, 185, 156, 1);
-}
-
-.main__home-btn.summer {
-  background-color: rgb(194, 56, 4);
-  color: rgb(255, 255, 255);
-}
-
-.main__home-btn.summer:hover {
-  background-color: rgba(248, 113, 62, 1);
-}
-
-.main__home-btn.fall {
-  background-color: rgb(223, 156, 77);
-  color: rgb(255, 255, 255);
-}
-
-.main__home-btn.fall:hover {
-  background-color: rgba(202, 125, 35, 1);
-}
-
-.main__home-btn.winter {
-  background-color: rgb(114, 134, 151);
-  color: rgb(255, 255, 255);
-}
-
-.main__home-btn.winter:hover {
-  background-color: rgba(97, 123, 146, 1);
-}
-
-.main__away-btn {
-  margin: 0;
-  margin-bottom: 40px;
-  width: 24rem;
-  height: 4rem;
-  border: none;
-  border-radius: 2rem;
-  font-family: "Raleway";
-  font-weight: 400;
-  font-size: 1.25rem;
-  letter-spacing: 2px;
-}
-
-.main__away-btn.spring {
-  background-color: rgb(92, 122, 106);
-  color: rgb(255, 255, 255);
-}
-
-.main__away-btn.spring:hover {
-  background-color: rgba(131, 185, 156, 1);
-}
-
-.main__away-btn.summer {
-  background-color: rgb(194, 56, 4);
-  color: rgb(255, 255, 255);
-}
-
-.main__away-btn.summer:hover {
-  background-color: rgba(248, 113, 62, 1);
-}
-
-.main__away-btn.fall {
-  background-color: rgb(223, 156, 77);
-  color: rgb(255, 255, 255);
-}
-
-.main__away-btn.fall:hover {
-  background-color: rgba(202, 125, 35, 1);
-}
-
-.main__away-btn.winter {
-  background-color: rgb(114, 134, 151);
-  color: rgb(255, 255, 255);
-}
-
-.main__away-btn.winter:hover {
-  background-color: rgba(97, 123, 146, 1);
-}
-
-.main__map {
-  align-items: center;
-}
-
-.main__footer {
-  display: flex;
   justify-content: center;
+  gap: 40px;
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 10px auto;
 }
 
-@media screen and (max-width: 800px) {
+.main__home-btn,
+.main__away-btn {
+  flex: 1;
+  padding: 1.25rem;
+  border-radius: 2rem;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: white;
+  background-color: var(--brand-color);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.main__home-btn:hover,
+.main__away-btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--brand-hover);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 768px) {
   .main {
-    padding-bottom: 30px;
+    padding: 2rem 1rem;
   }
+  .main__map_container {
+    padding: 2rem 1.5rem;
+  }
+  .main__map_btn-container {
+    flex-direction: column;
+  }
+  .main__map_title {
+    font-size: 1.75rem;
+  }
+}
 
-  .main__content {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
-  .main__footer {
-    margin-top: 50px;
-  }
+.main__home-btn.active,
+.main__away-btn.active {
+  background-color: var(--brand-color) !important;
+  color: white !important;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  border: 3px solid white;
+  outline: 2px solid var(--brand-hover);
 }
