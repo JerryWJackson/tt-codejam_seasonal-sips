@@ -8,7 +8,7 @@ describe("Map Search Interactions", () => {
     render(<App />);
 
     const awayBtn = screen.getByRole("button", { name: /Places that Serve/i });
-    const homeBtn = screen.getByRole("button", { name: /Ingredients Near Me/i });
+    const homeBtn = screen.getByRole("button", { name: /Make at Home/i });
 
     expect(awayBtn).toHaveClass("active");
 

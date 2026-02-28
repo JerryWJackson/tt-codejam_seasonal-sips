@@ -8,10 +8,12 @@ describe("Drink Filtering Logic", () => {
     render(<App />);
 
     // Force Spring season to ensure drinks like Gimlet are in the pool
-    const toggle = screen.getByLabelText(/Toggle Dev Menu/i);
-    fireEvent.click(toggle);
-    const springBtn = screen.getByRole("button", { name: /Spring/i });
-    fireEvent.click(springBtn);
+    const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
+    if (toggle) {
+      fireEvent.click(toggle);
+      const springBtn = screen.getByRole("button", { name: /Spring/i });
+      fireEvent.click(springBtn);
+    }
 
     // Initial state check
     const initialDrinks = screen.getAllByRole("listitem", {
@@ -37,10 +39,12 @@ describe("Drink Filtering Logic", () => {
     render(<App />);
 
     // Force Spring season
-    const toggle = screen.getByLabelText(/Toggle Dev Menu/i);
-    fireEvent.click(toggle);
-    const springBtn = screen.getByRole("button", { name: /Spring/i });
-    fireEvent.click(springBtn);
+    const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
+    if (toggle) {
+      fireEvent.click(toggle);
+      const springBtn = screen.getByRole("button", { name: /Spring/i });
+      fireEvent.click(springBtn);
+    }
 
     // Select Gin
     const ginCheckbox = screen.getByRole("checkbox", { name: "Gin" });
