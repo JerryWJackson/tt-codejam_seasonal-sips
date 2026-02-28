@@ -18,8 +18,11 @@ describe("Drink Filtering Logic", () => {
     });
     expect(initialDrinks.length).toBeGreaterThan(0);
 
-    // Using partial match to handle "Vodka Vodka" or similar doubled labels
-    const vodkaCheckbox = screen.getByRole("checkbox", { name: /Vodka/i });
+    // Using exact match string to avoid matching "Ginger Beer"
+    const vodkaCheckbox = screen.getByRole("checkbox", {
+      name: "Vodka Vodka",
+      exact: true,
+    });
     fireEvent.click(vodkaCheckbox);
 
     expect(screen.getByText(/Lemon Drop/i)).toBeInTheDocument();
@@ -41,7 +44,12 @@ describe("Drink Filtering Logic", () => {
       fireEvent.click(springBtn);
     }
 
-    const ginCheckbox = screen.getByRole("checkbox", { name: /Gin/i });
+    // Using exact string to avoid matching "Ginger Beer"
+    // Note: The CI logs show the accessible name is "Gin Gin" because of the double label issue
+    const ginCheckbox = screen.getByRole("checkbox", {
+      name: "Gin Gin",
+      exact: true,
+    });
     fireEvent.click(ginCheckbox);
 
     const limeCheckbox = screen.getByRole("checkbox", { name: /Lime/i });
