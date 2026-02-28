@@ -1,5 +1,5 @@
 const constants = {
-  apiKey: import.meta.env.VITE_GOOGLE_MAPS_API_KEY,
+  apiKey: "AIzaSyCDJPcmSrZUgzZVFeaB9mHSKfX4JZJcKnE",
   seasonalElements: [
     { CardList: ["card", "description"] },
     { Footer: ["footer", "footer__names", "footer__year"] },
