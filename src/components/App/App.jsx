@@ -2,10 +2,13 @@ import "./App.css";
 import React from "react";
 import { useEffect, useState } from "react";
 import "../../vendor/fonts.css";
-import { constants } from "../../utils/constants";
+// eslint-disable-next-line
 import Home from "../Home/Home";
+// eslint-disable-next-line
 import Main from "../Main/Main";
-import DevMenu from "../DevMenu/DevMenu";
+// eslint-disable-next-line
+import Footer from "../Footer/Footer";
+import { constants } from "../../utils/constants";
 
 export default function App() {
   const [hasTag, setHadTag] = useState(false);
@@ -16,19 +19,6 @@ export default function App() {
   const [pin, setPin] = useState("");
   const [notFound, setNotFound] = useState(false);
   const [currentSeason, setCurrentSeason] = useState("spring");
-  const [searchType, setSearchType] = useState("away"); // Default to bars
-  const [selectedAlcohols, setSelectedAlcohols] = useState([]);
-  const [selectedIngredients, setSelectedIngredients] = useState([]);
-  const [isMidnight, setIsMidnight] = useState(true);
-  const [seasonOverride, setSeasonOverride] = useState(null);
-
-  const toggleMidnight = () => setIsMidnight(!isMidnight);
-
-  const toggleFilter = (item, list, setList) => {
-    setList((prev) =>
-      prev.includes(item) ? prev.filter((i) => i !== item) : [...prev, item],
-    );
-  };
 
   const handleScroll = (elementId) => {
     setIsLocated(true);
@@ -47,21 +37,22 @@ export default function App() {
 
   const time = new Date();
   const curMonth = time.getMonth() + 1;
+  console.log(curMonth);
 
   useEffect(() => {
-    if (seasonOverride) {
-      setCurrentSeason(seasonOverride);
-      return;
+    if (curMonth == 12 || curMonth == 1 || curMonth == 2) {
+      setCurrentSeason("winter");
+    } else if (curMonth == 3 || curMonth == 4 || curMonth == 5) {
+      setCurrentSeason("spring");
+    } else if (curMonth == 6 || curMonth == 7 || curMonth == 8) {
+      setCurrentSeason("summer");
+    } else {
+      setCurrentSeason("fall");
     }
-    const { seasons } = constants;
-    const season =
-      Object.keys(seasons).find((key) => seasons[key].includes(curMonth)) ||
-      "spring";
-    setCurrentSeason(season);
-  }, [curMonth, seasonOverride]);
+  }, [currentSeason]);
 
   return (
-    <div className={`page ${currentSeason} ${isMidnight ? "midnight" : ""}`}>
+    <div className="page">
       <div className="App">
         <Home
           setIsLocated={setIsLocated}
@@ -69,34 +60,8 @@ export default function App() {
           setAddress={setAddress}
           setPin={setPin}
           currentSeason={currentSeason}
-          isMidnight={isMidnight}
-          toggleMidnight={toggleMidnight}
         />
-        <Main
-          currentSeason={currentSeason}
-          address={address}
-          setAddress={setAddress}
-          pin={pin}
-          setPin={setPin}
-          notFound={notFound}
-          setNotFound={setNotFound}
-          setIsLocated={setIsLocated}
-          handleScroll={handleScroll}
-          searchType={searchType}
-          setSearchType={setSearchType}
-          selectedAlcohols={selectedAlcohols}
-          setSelectedAlcohols={setSelectedAlcohols}
-          selectedIngredients={selectedIngredients}
-          setSelectedIngredients={setSelectedIngredients}
-          toggleAlcohol={(item) =>
-            toggleFilter(item, selectedAlcohols, setSelectedAlcohols)
-          }
-          toggleIngredient={(item) =>
-            toggleFilter(item, selectedIngredients, setSelectedIngredients)
-          }
-          setLocation={() => handleScroll("map")}
-        />
-        <DevMenu setSeasonOverride={setSeasonOverride} />
+        <Main currentSeason={currentSeason} />
       </div>
     </div>
   );
