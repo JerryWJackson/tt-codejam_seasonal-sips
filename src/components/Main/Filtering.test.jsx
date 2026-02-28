@@ -1,13 +1,11 @@
 /** @vitest-environment jsdom */
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../App/App";
-import { expect, test, describe } from "vitest";
 
 describe("Drink Filtering Logic", () => {
   test("filters drinks by alcohol type", async () => {
     render(<App />);
 
-    // Force Spring season to ensure drinks like Gimlet are in the pool
     const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
     if (toggle) {
       fireEvent.click(toggle);
@@ -15,17 +13,15 @@ describe("Drink Filtering Logic", () => {
       fireEvent.click(springBtn);
     }
 
-    // Initial state check
     const initialDrinks = screen.getAllByRole("listitem", {
       className: /card-item/i,
     });
     expect(initialDrinks.length).toBeGreaterThan(0);
 
-    // Filter by Vodka
-    const vodkaCheckbox = screen.getByRole("checkbox", { name: "Vodka" });
+    // Using partial match to handle "Vodka Vodka" or similar doubled labels
+    const vodkaCheckbox = screen.getByRole("checkbox", { name: /Vodka/i });
     fireEvent.click(vodkaCheckbox);
 
-    // Check if Lemon Drop is visible
     expect(screen.getByText(/Lemon Drop/i)).toBeInTheDocument();
 
     const filteredDrinks = screen.getAllByRole("heading", { level: 4 });
@@ -38,7 +34,6 @@ describe("Drink Filtering Logic", () => {
   test("filters drinks by multiple categories (Alcohol + Ingredient)", async () => {
     render(<App />);
 
-    // Force Spring season
     const toggle = screen.queryByLabelText(/Toggle Dev Menu/i);
     if (toggle) {
       fireEvent.click(toggle);
@@ -46,12 +41,10 @@ describe("Drink Filtering Logic", () => {
       fireEvent.click(springBtn);
     }
 
-    // Select Gin
-    const ginCheckbox = screen.getByRole("checkbox", { name: "Gin" });
+    const ginCheckbox = screen.getByRole("checkbox", { name: /Gin/i });
     fireEvent.click(ginCheckbox);
 
-    // Select Lime
-    const limeCheckbox = screen.getByRole("checkbox", { name: "Lime" });
+    const limeCheckbox = screen.getByRole("checkbox", { name: /Lime/i });
     fireEvent.click(limeCheckbox);
 
     const filteredDrinks = screen.getAllByRole("heading", { level: 4 });

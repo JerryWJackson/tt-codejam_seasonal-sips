@@ -1,7 +1,6 @@
 /** @vitest-environment jsdom */
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../App/App";
-import { expect, test, describe } from "vitest";
 
 describe("Map Search Interactions", () => {
   test("toggles search context between Home and Away", async () => {
