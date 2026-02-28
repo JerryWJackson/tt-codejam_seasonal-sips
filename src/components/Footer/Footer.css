@@ -13,7 +13,7 @@
   border-top: 8px solid var(--brand-color);
   border-radius: 2rem;
   box-shadow: var(--glass-shadow);
-  margin: 4rem auto;
+  margin: 0 auto var(--gap-standard) auto;
   transition: all 0.5s ease;
   color: var(--text-primary);
 }
