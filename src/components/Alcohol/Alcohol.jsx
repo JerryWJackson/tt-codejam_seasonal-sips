@@ -1,44 +1,41 @@
-import React from "react";
+import React, { useMemo } from "react";
 import { drinksList } from "../../utils/drinksList";
 import "./Alcohol.css";
 
-const alcohols = [];
-const buildAlcoholCloud = () => {
-  drinksList.forEach((drink) => {
-    drink.alcohol.forEach((alcohol) => {
-      if (!alcohols.includes(alcohol)) {
-        alcohols.push(alcohol);
-      }
+const Alcohols = ({ selectedAlcohols, toggleAlcohol }) => {
+  const alcohols = useMemo(() => {
+    const list = new Set();
+    drinksList.forEach((drink) => {
+      drink.alcohol.forEach((alc) => list.add(alc));
     });
-  });
-  console.log(alcohols);
-};
-buildAlcoholCloud();
-
-alcohols.sort();
-
-const Alcohols = () => {
-  let alcoholsList = [];
-  alcohols.forEach((alcohol, index) => {
-    alcoholsList.push(
-      <li key={index}>
-        <input
-          className="alcohol__checkbox"
-          type="checkbox"
-          id=""
-          name={alcohol}
-          value={alcohol}
-        />
-        <span className="span-for-alcohol">
-          <label htmlFor="alcohol__checkbox" className="alcohol__checkbox_label">{alcohol}</label>
-        </span>
-      </li>
-    );
-  });
+    return Array.from(list).sort();
+  }, []);
 
   return (
     <div className="alcohols__container">
-      <ul className="alcohols__list">{alcoholsList}</ul>
+      <ul className="alcohols__list">
+        {alcohols.map((alcohol, index) => (
+          <li key={alcohol}>
+            <input
+              className="alcohol__checkbox"
+              type="checkbox"
+              id={`alcohol-${index}`}
+              name={alcohol}
+              value={alcohol}
+              checked={selectedAlcohols.includes(alcohol)}
+              onChange={() => toggleAlcohol(alcohol)}
+            />
+            <span className="span-for-alcohol">
+              <label
+                htmlFor={`alcohol-${index}`}
+                className="alcohol__checkbox_label"
+              >
+                {alcohol}
+              </label>
+            </span>
+          </li>
+        ))}
+      </ul>
     </div>
   );
 };
