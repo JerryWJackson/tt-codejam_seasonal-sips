@@ -1,100 +1,36 @@
-/* this file needs a background color and some sizing.
-   it also needs seasonal css for changing the background color.
-*/
-
 .header {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-}
-
-.header__logo {
-  margin-bottom: 10px;
-  margin-left: 20px;
-  width: 100px;
-  border: none;
-  border-radius: 50%;
+  align-items: center;
+  padding: 4rem 2rem;
+  background: var(--bg-secondary);
+  border-radius: 2rem;
+  border: 1px solid var(--glass-border);
+  border-top: 8px solid var(--brand-color);
+  box-shadow: var(--glass-shadow);
+  margin: 0 auto 2rem auto;
+  width: 95%;
+  max-width: 1200px;
 }
 
 .header__container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  margin-top: 75px;
+  width: 100%;
+  text-align: center;
 }
 
 .header__container-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
   margin: 0;
-  font-family: "Cinzel Decorative", serif;
-  font-size: 3rem;
-  font-weight: 400;
-  color: rgb(92, 122, 106);
-  text-transform: lowercase;
-  max-width: 900px;
-  line-height: 4.5rem;
-  margin-bottom: 50px;
+  color: var(--brand-color);
+  transition: color 0.5s ease;
 }
 
-.header__container-title.spring {
-  color: rgb(92, 122, 106);
-}
-
-.header__container-title.summer {
-  color: rgb(194, 56, 4);
-}
-
-.header__container-title.fall {
-  color: rgb(223, 156, 77);
-}
-
-.header__container-title.winter {
-  color: rgb(114, 134, 151);
-}
-
-.header__container-description {
-  margin: 5px 0 10px 0;
-  color: rgba(184, 123, 49, 0.808);
-  font-family: "Playfair Display SC", serif;
-  font-size: 1.5rem;
-  font-style: italic;
-  font-weight: 400;
-  padding-bottom: 1.25rem;
-}
-
-@media screen and (max-width: 800px) {
-  .header__logo {
-    width: 100px;
+@media (max-width: 768px) {
+  .header {
+    padding: 2rem 1rem;
   }
-
   .header__container-title {
-    font-size: 4rem;
-    max-width: 600px;
-    line-height: 3.5rem;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-
-  .header__container-description {
-    font-size: 16px;
-  }
-}
-@media screen and (max-width: 700px) {
-  .header__container-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
-@media screen and (max-width: 480px) {
-  .header__container-title {
-    font-size: 2.5rem;
-    max-width: 400px;
-    margin-bottom: 20px;
-  }
-}
-
-@media screen and (max-width: 400px) {
-  header__container-title {
-    font-size: 2rem;
-    line-height: 2rem;
+    font-size: 1.75rem;
   }
 }
