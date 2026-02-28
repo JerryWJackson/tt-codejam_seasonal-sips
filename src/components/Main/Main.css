@@ -14,13 +14,12 @@
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 3rem;
+  padding: 3rem 2rem;
   border-radius: 2rem;
   border: 1px solid var(--glass-border);
   border-top: 8px solid var(--brand-color);
   box-shadow: var(--glass-shadow);
-  width: 95%;
-  max-width: 1200px;
+  width: min(1200px, 95%);
   margin: 0 auto;
   color: var(--text-primary);
 }
@@ -41,13 +40,12 @@
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 1rem 0;
+  padding: 2rem;
   border-radius: 2rem;
   border: 1px solid var(--glass-border);
   border-top: 8px solid var(--brand-color);
   box-shadow: var(--glass-shadow);
-  width: 95%;
-  max-width: 1200px;
+  width: min(1200px, 95%);
   margin: 0 auto;
   overflow: hidden;
 }
@@ -69,13 +67,12 @@
   background: var(--glass-bg);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
-  padding: 4rem;
+  padding: 4rem 2rem;
   border-radius: 2rem;
   border: 1px solid var(--glass-border);
   border-top: 8px solid var(--brand-color);
   box-shadow: var(--glass-shadow);
-  width: 95%;
-  max-width: 1200px;
+  width: min(1200px, 95%);
   margin: 4rem auto;
   color: var(--text-primary);
 }

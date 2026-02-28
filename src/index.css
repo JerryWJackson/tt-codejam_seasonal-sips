@@ -13,7 +13,12 @@
   --text-inverse: #f8f9fa; /* Light text for dark surfaces (backgrounds) */
 
   /* Glassmorphism Effect */
-  --glass-bg: rgba(255, 255, 255, 0.9); /* Increased opacity for pure white look on dark bg */
+  --glass-bg: rgba(
+    255,
+    255,
+    255,
+    0.9
+  ); /* Increased opacity for pure white look on dark bg */
   --glass-border: rgba(255, 255, 255, 0.4);
   --glass-shadow: 0 12px 40px 0 rgba(0, 0, 0, 0.6);
 
@@ -49,6 +54,12 @@
 }
 
 /* Reset partials - removed aggressive * selector */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 html,
 body {
   margin: 0;
