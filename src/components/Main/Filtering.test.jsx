@@ -1,3 +1,4 @@
+/** @vitest-environment jsdom */
 import { render, screen, fireEvent } from "@testing-library/react";
 import App from "../App/App";
 import { expect, test, describe } from "vitest";
@@ -11,27 +12,24 @@ describe("Drink Filtering Logic", () => {
     fireEvent.click(toggle);
     const springBtn = screen.getByRole("button", { name: /Spring/i });
     fireEvent.click(springBtn);
-    
-    // Initial state check (some drinks should be visible)
+
+    // Initial state check
     const initialDrinks = screen.getAllByRole("listitem", {
       className: /card-item/i,
     });
     expect(initialDrinks.length).toBeGreaterThan(0);
 
-    // Use and pick one if multiple exist, or be more specific. 
-    // Given the previous error, let's use getByRole which is preferred.
+    // Filter by Vodka
     const vodkaCheckbox = screen.getByRole("checkbox", { name: "Vodka" });
     fireEvent.click(vodkaCheckbox);
 
-    // Check if Lemon Drop (known Vodka drink) is visible
+    // Check if Lemon Drop is visible
     expect(screen.getByText(/Lemon Drop/i)).toBeInTheDocument();
 
-    // Check if Bourbon drink is NOT visible (or at least filtered out)
     const filteredDrinks = screen.getAllByRole("heading", { level: 4 });
     const drinkNames = filteredDrinks.map((h) => h.textContent);
-    
+
     expect(drinkNames).toContain("Lemon Drop");
-    // "Bourbon and Peach Smash" should not be here
     expect(drinkNames).not.toContain("Bourbon and Peach Smash");
   });
 
@@ -44,7 +42,7 @@ describe("Drink Filtering Logic", () => {
     const springBtn = screen.getByRole("button", { name: /Spring/i });
     fireEvent.click(springBtn);
 
-    // Select Gin (exact match to avoid "Ginger Beer")
+    // Select Gin
     const ginCheckbox = screen.getByRole("checkbox", { name: "Gin" });
     fireEvent.click(ginCheckbox);
 
@@ -55,9 +53,7 @@ describe("Drink Filtering Logic", () => {
     const filteredDrinks = screen.getAllByRole("heading", { level: 4 });
     const drinkNames = filteredDrinks.map((h) => h.textContent);
 
-    // Gimlet is Gin + Lime
     expect(drinkNames).toContain("Gimlet");
-    // Lemon Drop is Vodka + Lemon, should be hidden
     expect(drinkNames).not.toContain("Lemon Drop");
   });
 });
